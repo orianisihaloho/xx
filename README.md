@@ -77,10 +77,8 @@ mooadmin-coreui-ngx/
 
 Active Record is a helper library for connect API in your Angular 4 Application.
 
-### ActiveRecord
- Class
-
-#### Methods      
+### Active Record
+ Class   
 
 | Methods       | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
@@ -97,8 +95,6 @@ Active Record is a helper library for connect API in your Angular 4 Application.
 
 ### ApiConfig
  Interface
-
-#### Properties
 
 | Properties     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
