@@ -64,7 +64,7 @@ mooadmin-coreui-ngx/
 |           ├── form-view
 |               ├── moofield/
 |               ├── mooform/
-        ├── active-record   
+|       ├── active-record   
 │   ├── scss/
 │   ├── index.html
 │   └── ...
@@ -86,19 +86,24 @@ mooadmin-coreui-ngx/
 
 ## Creators
 **Affandy Lamusu**
-
 <https://github.com/afandylamusu>
 
 **Andrey**
 
+<https://github.com/afandylamusu>
+
 
 **Ronald**
 
-**Oriani**
+<https://github.com/afandylamusu>
 
+
+**Oriani**
 <https://github.com/orianisihaloho>
 
 **Felix**
+<https://github.com/afandylamusu>
+
 
 
 
