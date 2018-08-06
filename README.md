@@ -102,8 +102,10 @@ Active Record is a helper library for connect API in your Angular 4 Application.
 | `update`           |                           |
 | `insert`       |  |
 | `delete` |                            |
-
-
+``` go
+whiteBackground := red.Add(color.BgWhite)
+whiteBackground.Println("Red text with white background.")
+```
 ## Views
  ### Form View
  ### List View
@@ -113,25 +115,25 @@ Active Record is a helper library for connect API in your Angular 4 Application.
 
 
 ## Creators
-**Affandy Lamusu**
+- **Affandy Lamusu**
 
 <https://github.com/afandylamusu>
 
-**Andrey**
+- **Andrey**
 
 <https://github.com/>
 
 
-**Ronald**
+- **Ronald**
 
 <https://github.com/>
 
 
-**Oriani**
+- **Oriani**
 
 <https://github.com/orianisihaloho>
 
-**Felix**
+- **Felix**
 
 <https://github.com/>
 
