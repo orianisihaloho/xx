@@ -94,7 +94,7 @@ Active Record is a helper library for connect API in your Angular 4 Application.
 
 
 ### ApiConfig
- Interface
+ `Interface`
 
 | Properties     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
