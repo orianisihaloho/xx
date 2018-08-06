@@ -112,11 +112,7 @@ Active Record is a helper library for connect API in your Angular 4 Application.
  moo-field
  ##### Input
  ngSwithCase
- | `query`            |                                                                                            |
-| `update`           |                           |
-| `insert`       |  |
-| `delete` |                            |
-
+ 
 | Input    | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
 |  ngSwithCase =  "Text"       |                                                                                            |
