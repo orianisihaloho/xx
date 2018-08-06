@@ -81,21 +81,16 @@ Active Record is a helper library for connect API in your Angular 4 Application.
  Class
  #### Methods
 
- /***
- 
-    | __Methods__ | __Description__ |
-    |-------------|-----------------|
-    | findAll(params: any)          |                     
-    | search (data: any,api)        |                   
-    | find(id: any)                 |
-    | update(id: any)               |
-    | insert(data: any)             |
-    | delete(id: any)               |
-    | generateParam(params: any)    |
-    | processData(res: Response)    |
-    | handleError(error: any)       |
-    
-***/
+- findAll(params: any)                         
+- search (data: any,api)                        
+- find(id: any)                 
+- update(id: any)               
+- insert(data: any)             
+- delete(id: any)               
+- generateParam(params: any)    
+- processData(res: Response)    
+- handleError(error: any)       
+
 
 
 ## Views
