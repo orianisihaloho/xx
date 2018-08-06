@@ -102,12 +102,41 @@ Active Record is a helper library for connect API in your Angular 4 Application.
 | `update`           |                           |
 | `insert`       |  |
 | `delete` |                            |
-``` go
-whiteBackground := red.Add(color.BgWhite)
-whiteBackground.Println("Red text with white background.")
-```
+
+
 ## Views
  ### Form View
+ #### MooField
+ Component
+ ##### Selector 
+ moo-field
+ ##### Input
+ ngSwithCase
+| Input    | Description                                                                                                           |
+| ---------         | -----------                                                                                                           |
+|  ngSwithCase =  "Text"       |                                                                                            |
+| ngSwithCase =  "Number"             |                           |
+| ngSwithCase =  "Email"         |  |
+| ngSwithCase =  "Password"   |  |
+| ngSwithCase =  "Radio"         |  |
+| ngSwithCase =  "Checkbox"   |  |
+
+
+
+ #### Moooform
+ Component
+ ##### Selector
+ moo-vform
+
+
+
+
+
+
+
+
+
+
  ### List View
  ### Table View
  ### Chart View
