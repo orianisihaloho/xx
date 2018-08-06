@@ -85,7 +85,7 @@ Active Record is a helper library for connect API in your Angular 4 Application.
 | Methods       | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
 | `findAll(params: any)`            |                                                                                            |
-| `search (data: any,api)`           |                           |
+| `search (data: any,api_search_name: string)`           |                           |
 | `find(id: any)`       |  |
 | `update(id: any)  `       |                                                                                          |
 | `insert(data: any) ` |                            |
@@ -93,6 +93,21 @@ Active Record is a helper library for connect API in your Angular 4 Application.
 | `generateParam(params: any) `      |                   |
 | `processData(res: Response)  `      |                     |
 | `handleError(error: any)  `      |                        |
+
+
+### ApiConfig
+ Interface
+
+#### Properties
+
+| Properties     | Description                                                                                                           |
+| ---------         | -----------                                                                                                           |
+| `query`            |                                                                                            |
+| `update`           |                           |
+| `insert`       |  |
+| `update(id: any)  `       |                                                                                          |
+| `delete` |                            |
+
 
 ## Views
  ### Form View
