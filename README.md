@@ -106,45 +106,37 @@ Active Record is a helper library for connect API in your Angular 4 Application.
 
 ## Views
  ### Form View
- -**MooForm**
- Component
- #### Selector
- moo-vform
+  ### MooForm
+  Component
+   #### Selector
+   moo-vform
 
- -**Form**
- Directive
- #### Selector
- form
- #### Input
- ngSubmit
- model
+  ### Form
+  Directive
+   #### Selector
+   form
+   #### Input
+   ngSubmit
+   model
 
--**NgContent**
-Directive
-#### Selector
-ng-content
-#### Input 
-select
+  ### NgContent
+  Directive
+   #### Selector
+   ng-content
+   #### Input 
+   select
 
-- **MooField**
- Component
- #### Selector 
- moo-field
+  ### MooField
+  Component
+   #### Selector 
+   moo-field
 
--**Ngtemplate**
-Directive
-#### Selector
-ng-template
-#### Input 
-ngSwitchCase
-
-
-
-
-
-
-
-
+  ### Ngtemplate
+  Directive
+   #### Selector
+  ng-template
+  #### Input 
+  ngSwitchCase
 
 
  ### List View
