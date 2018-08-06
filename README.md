@@ -84,15 +84,16 @@ Active Record is a helper library for connect API in your Angular 4 Application.
 
 | Methods       | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| `findAll(params: any)`            | GitHub link for the button.                                                                                           |
-| `search (data: any,api)`           | `title` attribute for the button's `<iframe>`.                                                                        |
-| `find(id: any)`       | `octicon-mark-github` by default. A [subset](rollup.config.js) of [Octicons](https://octicons.github.com) is bundled. |
-| `update(id: any)  `       | _None_ by default or `large`.                                                                                         |
-| `insert(data: any) ` | `false` by default or `true`. The dynamic count is generated based on detected button type.                           |
-| `delete(id: any)  `       | Text displayed on the button. It defaults to the text content within the link.                                        |
-| `generateParam(params: any) `      | Aira label for the button link.                                                                                       |
-| `processData(res: Response)  `      | Aira label for the button link.                                                                                       |
-| `handleError(error: any)  `      | Aira label for the button link.                                                                                       |
+| `findAll(params: any)`            |                                                                                            |
+| `search (data: any,api)`           |                           |
+| `find(id: any)`       |  |
+| `update(id: any)  `       |                                                                                          |
+| `insert(data: any) ` |                            |
+| `delete(id: any)  `       |                                    |
+| `generateParam(params: any) `      |                   |
+| `processData(res: Response)  `      |                     |
+| `handleError(error: any)  `      |                        |
+
 ## Views
  ### Form View
  ### List View
