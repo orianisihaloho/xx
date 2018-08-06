@@ -79,36 +79,20 @@ Active Record is a helper library for connect API in your Angular 4 Application.
 
 ### ActiveRecord
  Class
- #### Methods
 
+#### Methods      
 
-
-[![CircleCI](https://img.shields.io/circleci/project/github/ntkme/github-buttons.svg)](https://circleci.com/gh/ntkme/github-buttons)
-[![Codecov](https://img.shields.io/codecov/c/github/ntkme/github-buttons.svg)](https://codecov.io/gh/ntkme/github-buttons)
-
-
-To get started, checkout **[buttons.github.io](https://buttons.github.io)**!  
-
-- findAll(params: any)                         
-- search (data: any,api)                        
-- find(id: any)                 
-- update(id: any)               
-- insert(data: any)             
-- delete(id: any)               
-- generateParam(params: any)    
-- processData(res: Response)    
-- handleError(error: any)       
-
-| Attribute         | Description                                                                                                           |
+| Methods       | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| `href`            | GitHub link for the button.                                                                                           |
-| `title`           | `title` attribute for the button's `<iframe>`.                                                                        |
-| `data-icon`       | `octicon-mark-github` by default. A [subset](rollup.config.js) of [Octicons](https://octicons.github.com) is bundled. |
-| `data-size`       | _None_ by default or `large`.                                                                                         |
-| `data-show-count` | `false` by default or `true`. The dynamic count is generated based on detected button type.                           |
-| `data-text`       | Text displayed on the button. It defaults to the text content within the link.                                        |
-| `aria-label`      | Aira label for the button link.                                                                                       |
-
+| `findAll(params: any)`            | GitHub link for the button.                                                                                           |
+| `search (data: any,api)`           | `title` attribute for the button's `<iframe>`.                                                                        |
+| `find(id: any)`       | `octicon-mark-github` by default. A [subset](rollup.config.js) of [Octicons](https://octicons.github.com) is bundled. |
+| `update(id: any)  `       | _None_ by default or `large`.                                                                                         |
+| `insert(data: any) ` | `false` by default or `true`. The dynamic count is generated based on detected button type.                           |
+| `delete(id: any)  `       | Text displayed on the button. It defaults to the text content within the link.                                        |
+| `generateParam(params: any) `      | Aira label for the button link.                                                                                       |
+| `processData(res: Response)  `      | Aira label for the button link.                                                                                       |
+| `handleError(error: any)  `      | Aira label for the button link.                                                                                       |
 ## Views
  ### Form View
  ### List View
@@ -139,5 +123,7 @@ To get started, checkout **[buttons.github.io](https://buttons.github.io)**!
 **Felix**
 
 <https://github.com/>
+
+
 
 
