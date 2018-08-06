@@ -101,7 +101,6 @@ Active Record is a helper library for connect API in your Angular 4 Application.
 | `query`            |                                                                                            |
 | `update`           |                           |
 | `insert`       |  |
-| `update(id: any)  `       |                                                                                          |
 | `delete` |                            |
 
 
