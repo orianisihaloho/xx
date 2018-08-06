@@ -15,7 +15,7 @@ Mooadmin Core UI is extended shared library for Core UI, focused on view such as
 * [Creators](#creators)
 
 ## Getting Started
-# Installation
+### Installation
 
 ``` bash
 # clone the repo
@@ -63,7 +63,7 @@ mooadmin-coreui-ngx/
 |       ├── Views
 |           ├── form-view
 |               ├── moofield/
-|               ├── mooform
+|               ├── mooform/
         ├── active-record   
 │   ├── scss/
 │   ├── index.html
@@ -86,6 +86,7 @@ mooadmin-coreui-ngx/
 
 ## Creators
 **Affandy Lamusu**
+
 <https://github.com/afandylamusu>
 
 **Andrey**
@@ -94,6 +95,7 @@ mooadmin-coreui-ngx/
 **Ronald**
 
 **Oriani**
+
 <https://github.com/orianisihaloho>
 
 **Felix**
