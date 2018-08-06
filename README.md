@@ -1,17 +1,17 @@
-# Mooadmin-coreui-ngx
+#Mooadmin-coreui-ngx
 Mooadmin Core UI is extended shared library for Core UI, focused on view such as Form, Table, Report & Chart
 
 ## Table of Contents
-* [Getting Started](#gettingstarted)
+* [Getting Started](#getting-started)
 * [Usage](#usage)
 * [What's included](#whats-included)
-* [Active Record](#activerecord)
+* [Active Record](#active-record)
 * [Views](#View)
-* [Fom View](#formview)
-* [List View](#listview)
-* [Table View](#tableview)
-* [Chart View](#chartview)
-* [Report View](#reportview)
+* [Fom View](#form-view)
+* [List View](#list-view)
+* [Table View](#table-view)
+* [Chart View](#chart-view)
+* [Report View](#report-view)
 * [Creators](#creators)
 
 ## Getting Started
