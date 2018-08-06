@@ -80,26 +80,17 @@ Active Record is a helper library for connect API in your Angular 4 Application.
 ### ActiveRecord
  Class
  #### Methods
-
-  findAll(params: any)                      jdjfljdslfjldsjl
-                                            fjsdfjdlsflssl
-
-  search (data: any, api)                   dksppdsfid
-                                            dfsfsddfdsdfsfsf
-
-  find(id: any)
-
-  update(id: any)
-
-  insert(data: any)
-
-  delete(id: any)
-
-  generateParam(params: any)
-
-  processData(res: Response)
-
-  handleError(error: any)
+    | Methods | Description |
+    | --- | --- |
+    | findAll(params: any) |                     
+    | search (data: any, api) |                   
+    | find(id: any) |
+    | update(id: any) |
+    | insert(data: any) |
+    | delete(id: any) |
+    | generateParam(params: any) |
+    | processData(res: Response) |
+    | handleError(error: any) |
 
 
 
