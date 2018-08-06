@@ -81,6 +81,14 @@ Active Record is a helper library for connect API in your Angular 4 Application.
  Class
  #### Methods
 
+
+
+[![CircleCI](https://img.shields.io/circleci/project/github/ntkme/github-buttons.svg)](https://circleci.com/gh/ntkme/github-buttons)
+[![Codecov](https://img.shields.io/codecov/c/github/ntkme/github-buttons.svg)](https://codecov.io/gh/ntkme/github-buttons)
+
+
+To get started, checkout **[buttons.github.io](https://buttons.github.io)**!  
+
 - findAll(params: any)                         
 - search (data: any,api)                        
 - find(id: any)                 
@@ -91,7 +99,15 @@ Active Record is a helper library for connect API in your Angular 4 Application.
 - processData(res: Response)    
 - handleError(error: any)       
 
-
+| Attribute         | Description                                                                                                           |
+| ---------         | -----------                                                                                                           |
+| `href`            | GitHub link for the button.                                                                                           |
+| `title`           | `title` attribute for the button's `<iframe>`.                                                                        |
+| `data-icon`       | `octicon-mark-github` by default. A [subset](rollup.config.js) of [Octicons](https://octicons.github.com) is bundled. |
+| `data-size`       | _None_ by default or `large`.                                                                                         |
+| `data-show-count` | `false` by default or `true`. The dynamic count is generated based on detected button type.                           |
+| `data-text`       | Text displayed on the button. It defaults to the text content within the link.                                        |
+| `aria-label`      | Aira label for the button link.                                                                                       |
 
 ## Views
  ### Form View
