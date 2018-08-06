@@ -82,15 +82,15 @@ Active Record is a helper library for connect API in your Angular 4 Application.
 
 | Methods       | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| `findAll(params: any)`            |                                                                                            |
-| `search (data: any,api_search_name: string)`           |                           |
-| `find(id: any)`       |  |
-| `update(id: any)  `       |                                                                                          |
-| `insert(data: any) ` |                            |
-| `delete(id: any)  `       |                                    |
-| `generateParam(params: any) `      |                   |
-| `processData(res: Response)  `      |                     |
-| `handleError(error: any)  `      |                        |
+| findAll(params: any)            |                                                                                            |
+| search (data: any,api_search_name: string)           |                           |
+| find(id: any)       |  |
+| update(id: any)         |                                                                                          |
+| insert(data: any)  |                            |
+| delete(id: any)         |                                    |
+| generateParam(params: any)       |                   |
+| processData(res: Response)        |                     |
+| handleError(error: any)       |                        |
 
 
 ### ApiConfig
@@ -98,21 +98,21 @@ Active Record is a helper library for connect API in your Angular 4 Application.
 
 | Properties     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| `query`            |                                                                                            |
-| `update`           |                           |
-| `insert`       |  |
-| `delete` |                            |
+| query            |                                                                                            |
+| update           |                           |
+| insert       |  |
+| delete |                            |
 
 
 ## Views
  ### Form View
   ### MooForm
-  Component
+  `Component`
    #### Selector
    moo-vform
 
   ### Form
-  Directive
+  `Directive`
    #### Selector
    form
    #### Input
@@ -120,19 +120,19 @@ Active Record is a helper library for connect API in your Angular 4 Application.
    model
 
   ### NgContent
-  Directive
+  `Directive`
    #### Selector
    ng-content
    #### Input 
    select
 
   ### MooField
-  Component
+  `Component`
    #### Selector 
    moo-field
 
   ### Ngtemplate
-  Directive
+  `Directive`
    #### Selector
   ng-template
   #### Input 
