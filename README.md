@@ -86,23 +86,26 @@ mooadmin-coreui-ngx/
 
 ## Creators
 **Affandy Lamusu**
+
 <https://github.com/afandylamusu>
 
 **Andrey**
 
-<https://github.com/afandylamusu>
+<https://github.com/>
 
 
 **Ronald**
 
-<https://github.com/afandylamusu>
+<https://github.com/>
 
 
 **Oriani**
+
 <https://github.com/orianisihaloho>
 
 **Felix**
-<https://github.com/afandylamusu>
+
+<https://github.com/>
 
 
 
