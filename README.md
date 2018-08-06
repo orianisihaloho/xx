@@ -74,7 +74,34 @@ mooadmin-coreui-ngx/
 └── ...
 ```
 ## Active Record
-   
+
+Active Record is a helper library for connect API in your Angular 4 Application.
+
+### ActiveRecord
+ Class
+ #### Methods
+
+  findAll(params: any)                      jdjfljdslfjldsjl
+                                            fjsdfjdlsflssl
+
+  search (data: any, api)                   dksppdsfid
+                                            dfsfsddfdsdfsfsf
+
+  find(id: any)
+
+  update(id: any)
+
+  insert(data: any)
+
+  delete(id: any)
+
+  generateParam(params: any)
+
+  processData(res: Response)
+
+  handleError(error: any)
+
+
 
 ## Views
  ### Form View
