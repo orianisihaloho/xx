@@ -106,7 +106,7 @@ Active Record is a helper library for connect API in your Angular 4 Application.
 
 ## Views
  ### Form View
- - **MooField**
+- **MooField**
  
  Component
  ##### Selector 
@@ -114,14 +114,13 @@ Active Record is a helper library for connect API in your Angular 4 Application.
  ##### Input
  ng-template
 
-| Input    | Description                                                                                                           |
-| ---------         | -----------                                                                                                           |
-|  ngSwithCase       |  input type such as Text, Number, Email, Password, Radio, CheckBox on form   
-Type : String                                                                             |
+| Input    | Description            |
+| ---------         | -----------  |
+|  ngSwithCase       |  input type such as Text, Number, Email, Password, Radio, CheckBox on form  
+                          Type : String |
 
 
-
- - **Moooform**
+- **Moooform**
 
  Component
  ##### Selector
