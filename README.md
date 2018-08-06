@@ -116,7 +116,9 @@ Active Record is a helper library for connect API in your Angular 4 Application.
 
 | Input    | Description            |
 | ---------         | -----------  |
-|  ngSwithCase       |  input type such as Text, Number, Email, Password, Radio, CheckBox on form . type: String |
+|  ngSwithCase       |  input type such as Text, Number, Email, Password, Radio, CheckBox on form .
+
+type: String |
 
 
 - **Moooform**
