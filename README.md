@@ -51,24 +51,43 @@ mooadmin-coreui-ngx/
 ├── src/
 │   ├── app
 |       ├── containers/
-|       ├── service
-|           ├── contact.service.ts
-|           ├── pagerService.ts
-|           └── ...
 |       ├── views
+|           ├── mooadmin
+|               ├── contact
+|                   ├── contact.component
+|               ├── foods
+|                   ├── foods.component
+|               ├── moo-demo-routing.module
+|               ├── moo-demo.module
+|       ├── app.component
+|       ├── app.module
+|       ├── app.routing
 |       └── ...
 │   ├── assets/
 │   ├── environments/
 |   ├── lib
-|       ├── Views
-|           ├── form-view
-|               ├── moofield/
-|               ├── mooform/
-|       ├── active-record   
+|       ├── mooadmin-ngx
+|           ├── moo-field
+|               ├── moo-field.component
+|           ├── moo-vchart/
+|               ├── moo-vchart.component
+|           ├── moo-vform/
+|               ├── moo-vform.component
+|           ├── moo-vlist/
+|               ├── moo-vlist.component
+|           ├── moo-vtable/
+|               ├── moo-table.component
+|           ├── active-record
+|           ├── dictionary
+|           ├── field-types
+|           ├── mooadmin.module   
 │   ├── scss/
+|   ├── services
+|       ├── contact.service
+|       ├── contact
 │   ├── index.html
 │   └── ...
-├── .angular-cli.json
+├── .angular.json
 ├── ...
 ├── package.json
 └── ...
@@ -83,12 +102,14 @@ Active Record is a helper library for connect API in your Angular 4 Application.
 | Methods       | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
 | findAll(params: any)            |                                                                                            |
-| search (data: any,api_search_name: string)           |                           |
-| find(id: any)       |  |
-| update(id: any)         |                                                                                          |
+| findAllODataQuery(params: ODataQuery):Observable<T[]>  |                            |
+| search (data: any,api_search_name: string):Observable<T[]>           |                           |
+| find(id: any): Observable<T>     |  |
+| update(id: any, data: any)         |                                                                                          |
 | insert(data: any)  |                            |
 | delete(id: any)         |                                    |
 | generateParam(params: any)       |                   |
+| generateParamODataQuery(query: ODataQuery)  |                            |
 | processData(res: Response)        |                     |
 | handleError(error: any)       |                        |
 
@@ -106,42 +127,70 @@ Active Record is a helper library for connect API in your Angular 4 Application.
 
 ## Views
  ### Form View
-  ### MooForm
-  `Component`
+  ### MooVForm
+  `Class`
+  
    #### Selector
    moo-vform
 
-  ### Form
-  `Directive`
-   #### Selector
+   #### Properties
+   modelSchema: Dictionary
    form
-   #### Input
-   ngSubmit
-   model
 
-  ### NgContent
-  `Directive`
-   #### Selector
-   ng-content
-   #### Input 
-   select
+   #### Methods
+   formSubmit(f: NgForm)
+   ngAfterViewInit
+   ngOnInit
+
 
   ### MooField
-  `Component`
+  `Class`
    #### Selector 
    moo-field
 
-  ### Ngtemplate
-  `Directive`
-   #### Selector
-  ng-template
-  #### Input 
-  ngSwitchCase
+   #### Properties
+   config: any
+   name: any
+   form: MooVformComponent
+
+   #### Methods
+   ngOnInit
 
 
  ### List View
+  ### MooVList  
+   #### Selector
+   app-moo-vlist
+
+
  ### Table View
+  ### MooVTable
+   #### Selector
+   moo-vtable
+
+   #### Properties
+   columns: Field []
+   _dataSource$
+   _modelSchema
+   column
+
+   #### Methods
+   setDataSource()
+   setSchema(schema: any)
+   ngOnInit
+
+  ### Field
+  `Interface`
+   #### Properties
+   inputType
+
+
  ### Chart View
+  ### MooVChart
+   #### Selector
+   app-moo-vchart
+
+
  ### Report View
 
 
@@ -166,7 +215,7 @@ Active Record is a helper library for connect API in your Angular 4 Application.
 
 - **Felix**
 
-<https://github.com/>
+<https://github.com/felixsiburian>
 
 
 
