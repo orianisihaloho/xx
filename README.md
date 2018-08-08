@@ -105,12 +105,12 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
 | search            |    **search (data: any,api_search_name: string):Observable<T[]>** <br/> get all data    <br/> Type: Observable                   |
 | find   |  **find(id: any): Observable<T>** <br/> get data by id <br/> Type: Observable |
 | update        |  **update(id: any, data: any)** <br/> update data by id <br/> Type: any                                                                                       |
-| insert(data: any)  | insert data                            |
-| delete(id: any)         |  delete data by id                                    |
-| generateParam(params: any)       | generate paramater in any type                  |
-| generateParamODataQuery(query: ODataQuery)  | generate a paramater that can be used to modify an ODataQuery in the query string of the request URI                            |
-| processData(res: Response)        |    response data type json                 |
-| handleError(error: any)       |    handle any error that occurred                   |
+| insert  | **insert(data: any)** <br/> insert data   <br/> Type: any                         |
+| delete      |  **delete(data: any)** <br/> delete data by id  <br/> Type :any                                  |
+| generateParam     | **generateParam(params: any)** <br/> generate paramater in any type                  |
+| generateParamODataQuery |**generateParamODataQuery(query: ODataQuery)** <br/> generate a paramater that can be used to modify an ODataQuery in the query string of the request URI                            |
+| processData        |    **processData(res: Response)** <br/> response data type json                 |
+| handleError      |    **handleError(error: any)** <br/> handle any error that occurred <br/> Type: any                  |
 
 
 ### ApiConfig
