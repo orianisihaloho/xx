@@ -55,10 +55,9 @@ mooadmin-coreui-ngx/
 |           ├── mooadmin
 |               ├── contact
 |                   ├── contact.component
-|               ├── foods
-|                   ├── foods.component
 |               ├── moo-demo-routing.module
 |               ├── moo-demo.module
+|               └── ...
 |       ├── app.component
 |       ├── app.module
 |       ├── app.routing
