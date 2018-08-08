@@ -100,13 +100,14 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
 
 | Methods       | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| findAll(params: any)            |   can be used to get all data                                                                                         |
-| findAllODataQuery(params: ODataQuery):Observable<T[]>  |      can be used to get all data                      |
-| search (data: any,api_search_name: string):Observable<T[]>           |    can be used to get all data                       |
-| find(id: any): Observable<T>     |  can be used to get data by id |
-| update(id: any, data: any)         |  can be used to update data by id                                                                                        |
-| insert(data: any)  | can be used to insert data                            |
-| delete(id: any)         | can be used to delete data by id                                    |
+| findAll           |   **findAll(params: any)**
+can be used to get all data                                                                                         |
+| findAllODataQuery(params: ODataQuery):Observable<T[]>  |       get all data                      |
+| search (data: any,api_search_name: string):Observable<T[]>           |     get all data                       |
+| find(id: any): Observable<T>     |   get data by id |
+| update(id: any, data: any)         |   update data by id                                                                                        |
+| insert(data: any)  | insert data                            |
+| delete(id: any)         |  delete data by id                                    |
 | generateParam(params: any)       | generate paramater in any type                  |
 | generateParamODataQuery(query: ODataQuery)  | generate a paramater that can be used to modify an ODataQuery in the query string of the request URI                            |
 | processData(res: Response)        |    response data type json                 |
