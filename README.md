@@ -188,8 +188,8 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
   | Properties     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
 | columns          |  **columns: Field []**<br/> initialize field in array                                                                                         |
-| _dataSource$          |   initialize variabel  <br/>*Type observable*                       |
-| _modelSchema      |  |      **_modelSchema: Dictionary<Field>**<br/>Schema                |
+| _dataSource$_ |   initialize variabel  <br/>*Type observable*                       |
+| _modelSchema_      |  |      **_modelSchema_: Dictionary<Field>**<br/>Schema   |             
 
 
    #### Methods
@@ -199,7 +199,7 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
 | ---------         | -----------                                                                                                           |
 | setDataSource()          |    **setDataSource(data: Observable<any>)**<br/> set new  datasource                                                                                    |
 | setSchema()          |   **setSchema(schema: any)**<br/>  set new Schema                       |
-| ngOnInit     |  |       A callback method that is invoked immediately after the default change detector has checked the directive's data-bound properties for the first time, and before any of the view or content children have been checked. It is invoked only once when the directive is instantiated.                    |
+| ngOnInit     |  |   A callback method that is invoked immediately after the default change detector has checked the directive's data-bound properties for the first time, and before any of the view or content children have been checked. It is invoked only once when the directive is instantiated.                    |
 
    
   ### Field
