@@ -107,10 +107,10 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
 | update(id: any, data: any)         |  can be used to update data by id                                                                                        |
 | insert(data: any)  | can be used to insert data                            |
 | delete(id: any)         | can be used to delete data by id                                    |
-| generateParam(params: any)       |                   |
-| generateParamODataQuery(query: ODataQuery)  |                            |
-| processData(res: Response)        |                     |
-| handleError(error: any)       |                        |
+| generateParam(params: any)       | generate paramater in any type                  |
+| generateParamODataQuery(query: ODataQuery)  | generate a paramater that can be used to modify an ODataQuery in the query string of the request URI                            |
+| processData(res: Response)        |    response data type json                 |
+| handleError(error: any)       |    handle any error that occurred                   |
 
 
 ### ApiConfig
@@ -120,7 +120,7 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
 | ---------         | -----------                                                                                                           |
 | query            |  get all data. Type : String                                                                                          |
 | update           |     update data. Type : String                      |
-| insert       |  | insert data. Type: String                         |
+| insert          |     insert data. Type : String                      |
 | delete | delete data. Type: String                           |
 
 
