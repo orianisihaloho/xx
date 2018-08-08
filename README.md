@@ -7,7 +7,7 @@ Mooadmin Core UI is extended shared library for Core UI, focused on view such as
 * [What's included](#whats-included)
 * [Active Record](#active-record)
 * [Views](#Views)
-* [Fom View](#form-view)
+* [Form View](#form-view)
 * [List View](#list-view)
 * [Table View](#table-view)
 * [Chart View](#chart-view)
@@ -94,14 +94,16 @@ mooadmin-coreui-ngx/
 ```
 ## Active Record
 
-Active Record is a helper library for connect API in your Angular 4 Application.
+Active Record is a helper library for connect API in your client (Angular 4 Application).
 
 ### Active Record
 `Class`  
 
 | Methods       | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| findAll(params: any)            |                                                                                            |
+| findAll          |   findAll(params: any)
+Can be used to   find all data
+                                                                                         |
 | findAllODataQuery(params: ODataQuery):Observable<T[]>  |                            |
 | search (data: any,api_search_name: string):Observable<T[]>           |                           |
 | find(id: any): Observable<T>     |  |
