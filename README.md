@@ -172,12 +172,36 @@ Active Record is a helper library for connect API in your client (Angular 4 Appl
    #### Selector
    moo-vtable
 
+
+
    #### Properties
-    | Properties     | Description                                                                                                           |
+  
+  | Properties     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| config : any         |  schema                                                                    |
-| name : any         |                                                                      |
-| form: MooVformComponent   |                                                                  |
+| query            |  get all data. Type : String                                                                                          |
+| update           |     update data. Type : String                      |
+| insert       |  | insert data. Type: String                         |
+| delete | delete data. Type: String                           |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
