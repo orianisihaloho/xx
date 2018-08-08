@@ -101,15 +101,13 @@ Active Record is a helper library for connect API in your client (Angular 4 Appl
 
 | Methods       | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| findAll          |   findAll(params: any)
-Can be used to   find all data
-                                                                                         |
-| findAllODataQuery(params: ODataQuery):Observable<T[]>  |                            |
-| search (data: any,api_search_name: string):Observable<T[]>           |                           |
-| find(id: any): Observable<T>     |  |
-| update(id: any, data: any)         |                                                                                          |
-| insert(data: any)  |                            |
-| delete(id: any)         |                                    |
+| findAll(params: any)            |   can be used to get all data                                                                                         |
+| findAllODataQuery(params: ODataQuery):Observable<T[]>  |      can be used to get all data                      |
+| search (data: any,api_search_name: string):Observable<T[]>           |    can be used to get all data                       |
+| find(id: any): Observable<T>     |  can be used to get data by id |
+| update(id: any, data: any)         |  can be used to update data by id                                                                                        |
+| insert(data: any)  | can be used to insert data                            |
+| delete(id: any)         | can be used to delete data by id                                    |
 | generateParam(params: any)       |                   |
 | generateParamODataQuery(query: ODataQuery)  |                            |
 | processData(res: Response)        |                     |
