@@ -100,7 +100,7 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
 
 | Methods       | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| findAll(params: any)            |   **findAll(params: any)**  get all data                                                                                         |
+| findAll(params: any)            |   **findAll(params: any)** __get all data                                                                                         |
 | findAllODataQuery(params: ODataQuery):Observable<T[]>  |       get all data                      |
 | search (data: any,api_search_name: string):Observable<T[]>           |     get all data                       |
 | find(id: any): Observable<T>     |   get data by id |
