@@ -192,6 +192,7 @@ Active Record is a helper library for connect API in your client (Angular 4 Appl
    
   ### Field
   `Interface`
+   Abstraction for hold configuration
    #### Properties
    inputType
 
