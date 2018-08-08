@@ -186,12 +186,12 @@ Active Record is a helper library for connect API in your client (Angular 4 Appl
 
    #### Methods
   
-     | Methods    | Description                                                                                                           |
+    
+  | Methods     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-|
-   setDataSource() |                                                                     |
-|  setSchema(schema: any) |                                                              |
-|  ngOnInit |                                                                  |
+| setDataSource()          |                                                                                            |
+| setSchema (schema: any)          |                           |
+| ngOnInit     |  |                          |
 
    
   ### Field
