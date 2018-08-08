@@ -141,7 +141,7 @@ Active Record is a helper library for connect API in your client (Angular 4 Appl
 
   | Methods    | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-|     formSubmit (f: NgForm)        |                                                                           |
+|     formSubmit ( f: NgForm)        |                                                                           |
 |    ngAfterViewInit    |                                                                           |
 |        ngOnInit       |                                                                           |   
  
@@ -179,8 +179,8 @@ Active Record is a helper library for connect API in your client (Angular 4 Appl
   | Properties     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
 | columns: Field []          |                                                                                            |
-| _dataSource$          |                           |
-| _modelSchema      |  |                          |
+| _dataSource$          |   variabel type observable                        |
+| _modelSchema      |  |          schema                |
 | column |                            |
 
 
