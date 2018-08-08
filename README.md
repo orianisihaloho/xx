@@ -100,17 +100,17 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
 
 | Methods       | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| findAll          |   **findAll(params: any)** <br/> get all data  <br/> type: any                                                                                       |
-| findAllODataQuery |      **findAllODataQuery(params: ODataQuery):Observable<T[]>** ,<br/> get all data <br/> Type: Observable                   |
-| search            |    **search (data: any,api_search_name: string):Observable<T[]>** <br/> get all data    <br/> Type: Observable                   |
-| find   |  **find(id: any): Observable<T>** <br/> get data by id <br/> Type: Observable |
-| update        |  **update(id: any, data: any)** <br/> update data by id <br/> Type: any                                                                                       |
-| insert  | **insert(data: any)** <br/> insert data   <br/> Type: any                         |
-| delete      |  **delete(data: any)** <br/> delete data by id  <br/> Type :any                                  |
+| findAll          |   **findAll(params: any)** <br/> get all data  <br/> *Type: any*                                                                                       |
+| findAllODataQuery |      **findAllODataQuery(params: ODataQuery):Observable<T[]>** ,<br/> get all data <br/> *Type: Observable*                  |
+| search            |    **search (data: any,api_search_name: string):Observable<T[]>** <br/> get all data    <br/> *Type: Observable*                   |
+| find   |  **find(id: any): Observable<T>** <br/> get data by id <br/> T*ype: Observable* |
+| update        |  **update(id: any, data: any)** <br/> update data by id <br/> *Type: any                                                                                       |
+| insert  | **insert(data: any)** <br/> insert data   <br/> *Type: any*                        |
+| delete      |  **delete(data: any)** <br/> delete data by id  <br/> *Type :any*                                  |
 | generateParam     | **generateParam(params: any)** <br/> generate paramater in any type                  |
 | generateParamODataQuery |**generateParamODataQuery(query: ODataQuery)** <br/> generate a paramater that can be used to modify an ODataQuery in the query string of the request URI                            |
 | processData        |    **processData(res: Response)** <br/> response data type json                 |
-| handleError      |    **handleError(error: any)** <br/> handle any error that occurred <br/> Type: any                  |
+| handleError      |    **handleError(error: any)** <br/> handle any error that occurred <br/> *Type: any*                  |
 
 
 ### ApiConfig
@@ -118,10 +118,10 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
 
 | Properties     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| query            |  get all data. Type : String                                                                                          |
-| update           |     update data. Type : String                      |
-| insert          |     insert data. Type : String                      |
-| delete | delete data. Type: String                           |
+| query            |  get all data<br/> *Type : String*                                                                                          |
+| update           |  update data<br/> *Type : String*                      |
+| insert          |   insert data<br/> *Type : String*                      |
+| delete | delete data<br/> *Type: String*                           |
 
 
 ## Views
@@ -140,7 +140,7 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
 
   | Methods    | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-|     formSubmit ( f: NgForm)        |                                                                           |
+|     formSubmit        |    **formSubmit ( f: NgForm)**                                                                       |
 |    ngAfterViewInit    |                                                                           |
 |        ngOnInit       |                                                                           |   
  
@@ -152,9 +152,9 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
    #### Properties
   | Properties     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| config : any         |  schema                                                                    |
-| name : any         |                                                                      |
-| form: MooVformComponent   |                                                                  |
+| config         |  **config : any**<br/> schema                                                                    |
+| name         |  **name : any**<br/>                                                                    |
+| form   |     **form: MooVformComponent**<br/>                                                             |
 
    #### Methods
    ngOnInit
@@ -164,11 +164,12 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
    moo-field-string
    
    #### Properties
-   name: String
-   config: StringField
 
-
-
+   | Properties     | Description                                                                                                           |
+| ---------         | -----------                                                                                                           |
+| name        |  **name: String**<br/>                                                                     |
+| config       |  **config: StringField**<br/>                                                                    |
+ 
  ### List View
   ### MooVList  
    #### Selector
@@ -186,10 +187,9 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
   
   | Properties     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| columns: Field []          |                                                                                            |
-| _dataSource$          |   variabel type observable                        |
-| _modelSchema      |  |          schema                |
-| column |                            |
+| columns          |  **columns: Field []**<br/>                                                                                          |
+| _dataSource$          |   **_dataSource$: Observable<any>**<br/> variabel <br/>*type observable*                       |
+| _modelSchema      |  |      **_modelSchema: Dictionary<Field>**<br/>schema                |
 
 
    #### Methods
@@ -197,8 +197,8 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
     
   | Methods     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| setDataSource()          |                                                                                            |
-| setSchema (schema: any)          |                           |
+| setDataSource()          |    **setDataSource(data: Observable<any>)**<br/>                                                                                     |
+| setSchema()          |   **setSchema(schema: any)**<br/>                         |
 | ngOnInit     |  |                          |
 
    
@@ -206,6 +206,13 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
   `Interface`
    Abstraction for hold configuration
    #### Properties
+    | Properties     | Description                                                                                                           |
+| ---------         | -----------                                                                                                           |
+| inputType         |    **inputType: String**<br/>                                                                                     |
+| model          |   **model: String**<br/>                         |
+| required   |  |    **required: boolean**<br/>                   |
+
+
    inputType
 
 
