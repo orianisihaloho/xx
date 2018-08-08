@@ -121,7 +121,7 @@ Active Record is a helper library for connect API in your client (Angular 4 Appl
 | ---------         | -----------                                                                                                           |
 | query            |  get all data. Type : String                                                                                          |
 | update           |     update data. Type : String                      |
-| insert       |  | insert data. Type: String
+| insert       |  | insert data. Type: String                         |
 | delete | delete data. Type: String                           |
 
 
@@ -141,7 +141,7 @@ Active Record is a helper library for connect API in your client (Angular 4 Appl
 
   | Methods    | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-|     formSubmit(f: NgForm)        |                                                                           |
+|     formSubmit (f: NgForm)        |                                                                           |
 |    ngAfterViewInit    |                                                                           |
 |        ngOnInit       |                                                                           |   
  
@@ -173,14 +173,12 @@ Active Record is a helper library for connect API in your client (Angular 4 Appl
    moo-vtable
 
    #### Properties
-
-   | Properties     | Description                                                                                                           |
+    | Properties     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-|
-   columns: Field []  |                                                                     |
-|   _dataSource$     |                                                                      |
-|_modelSchema |                                                                  |
-|column |                                                                  |
+| columns: Field []       |                                                                      |
+| _dataSource$         |                                                                      |
+| _modelSchema   |                                                                  |
+| column   |                                                                  |
 
    #### Methods
   
