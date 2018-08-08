@@ -1,5 +1,5 @@
 # Mooadmin-coreui-ngx
-Mooadmin Core UI is extended shared library for Core UI, focused on view such as Form, Table, Report & Chart
+Mooadmin Core UI is extended shared library for Core UI, focused on view such as Form, Table, Report & Chart.
 
 ## Table of Contents
 * [Getting Started](#getting-started)
@@ -93,7 +93,7 @@ mooadmin-coreui-ngx/
 ```
 ## Active Record
 
-Active Record is a helper library for connect API in your client (Angular 4 Application).
+Active Record is a helper library for connect API in your client Angular 4 Application.
 
 ### Active Record
 `Class`  
@@ -158,6 +158,15 @@ Active Record is a helper library for connect API in your client (Angular 4 Appl
 
    #### Methods
    ngOnInit
+
+  ### MooFieldStringComponent
+   #### Selector
+   moo-field-string
+   
+   #### Properties
+   name: String
+   config: StringField
+
 
 
  ### List View
