@@ -210,7 +210,7 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
 | ---------         | -----------                                                                                                           |
 | inputType           |  <br/> *Type : String*                                                                                          |
 | model           |  <br/> *Type : String*                      |
-| required          |   <br/> *Type : Boolean*                      |
+| required          |   declare the Field is required or not <br/> *Type : Boolean*                      |
 
 
 
@@ -232,7 +232,7 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
 
 - **Andrey**
 
-<https://github.com/>
+<https://github.com/andreycls>
 
 
 - **Ronald**
