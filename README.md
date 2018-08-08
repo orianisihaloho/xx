@@ -134,15 +134,15 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
 
    #### Properties
    modelSchema: Dictionary
-   form
+   onSubmit: any 
 
    #### Methods
 
   | Methods    | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-|     formSubmit        |    **formSubmit ( f: NgForm)**                                                                       |
-|    ngAfterViewInit    |                                                                           |
-|        ngOnInit       |                                                                           |   
+|     formSubmit        |    **formSubmit ( f: NgForm)**<br/> a method that is submitted from NgForm                                                                       |
+|    ngAfterViewInit    |     A callback method that is invoked immediately after Angular has completed initialization of a component's view. It is invoked only once when the view is instantiated.                                                                      |
+|        ngOnInit       |      A callback method that is invoked immediately after the default change detector has checked the directive's data-bound properties for the first time, and before any of the view or content children have been checked. It is invoked only once when the directive is instantiated.                                                                     |   
  
   ### MooField
   `Class`
@@ -152,7 +152,7 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
    #### Properties
   | Properties     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| config         |   schema<br/>*Type: any*                                                                  |
+| config         |   schema <br/>*Type: any*                                                                  |
 | name         |  <br/>*Type: any*<br/>                                                                    |
 | form   |     **form: MooVformComponent**<br/>                                                             |
 
@@ -187,9 +187,9 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
   
   | Properties     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| columns          |  **columns: Field []**<br/>                                                                                          |
-| _dataSource$          |   variabel <br/>*Type observable*                       |
-| _modelSchema      |  |      **_modelSchema: Dictionary<Field>**<br/>schema                |
+| columns          |  **columns: Field []**<br/> initialize field in array                                                                                         |
+| _dataSource$          |   initialize variabel  <br/>*Type observable*                       |
+| _modelSchema      |  |      **_modelSchema: Dictionary<Field>**<br/>Schema                |
 
 
    #### Methods
@@ -197,9 +197,9 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
     
   | Methods     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| setDataSource()          |    **setDataSource(data: Observable<any>)**<br/>                                                                                     |
-| setSchema()          |   **setSchema(schema: any)**<br/>                         |
-| ngOnInit     |  |                          |
+| setDataSource()          |    **setDataSource(data: Observable<any>)**<br/> set new  datasource                                                                                    |
+| setSchema()          |   **setSchema(schema: any)**<br/>  set new Schema                       |
+| ngOnInit     |  |       A callback method that is invoked immediately after the default change detector has checked the directive's data-bound properties for the first time, and before any of the view or content children have been checked. It is invoked only once when the directive is instantiated.                    |
 
    
   ### Field
