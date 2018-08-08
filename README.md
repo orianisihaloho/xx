@@ -178,42 +178,11 @@ Active Record is a helper library for connect API in your client (Angular 4 Appl
   
   | Properties     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| query            |  get all data. Type : String                                                                                          |
-| update           |     update data. Type : String                      |
-| insert       |  | insert data. Type: String                         |
-| delete | delete data. Type: String                           |
+| columns: Field []          |                                                                                            |
+| _dataSource$          |                           |
+| _modelSchema      |  |                          |
+| column |                            |
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    | Properties     | Description                                                                                                           |
-| ---------         | -----------                                                                                                           |
-| columns: Field []       |                                                                      |
-| _dataSource$         |                                                                      |
-| _modelSchema   |                                                                  |
-| column   |                                                                  |
 
    #### Methods
   
