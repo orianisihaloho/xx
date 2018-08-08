@@ -175,6 +175,17 @@ Active Record is a helper library for connect API in your client (Angular 4 Appl
    #### Properties
     | Properties     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
+| config : any         |  schema                                                                    |
+| name : any         |                                                                      |
+| form: MooVformComponent   |                                                                  |
+
+
+
+
+
+
+    | Properties     | Description                                                                                                           |
+| ---------         | -----------                                                                                                           |
 | columns: Field []       |                                                                      |
 | _dataSource$         |                                                                      |
 | _modelSchema   |                                                                  |
