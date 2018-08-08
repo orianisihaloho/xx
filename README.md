@@ -197,9 +197,9 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
     
   | Methods     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| setDataSource()          |    **setDataSource(data: Observable<any>)**<br/> set new  datasource                                                                                    |
-| setSchema()          |   **setSchema(schema: any)**<br/>  set new Schema                       |
-| ngOnInit     |  |   A callback method that is invoked immediately after the default change detector has checked the directive's data-bound properties for the first time, and before any of the view or content children have been checked. It is invoked only once when the directive is instantiated.                       |
+| setDataSource()          |  **setDataSource(data: Observable<any>)**<br/> set new  datasource                                                                                    |
+| setSchema()      |   **setSchema(schema: any)**<br/>  Set new Schema                       |
+| ngOnInit     |  |   A callback method that is invoked immediately after the default change detector has checked the directive's data-bound properties for the first time, and before any of the view or content children have been checked. It is invoked only once when the directive is instantiated.   |
 
    
   ### Field
