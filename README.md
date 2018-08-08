@@ -119,10 +119,10 @@ Active Record is a helper library for connect API in your client (Angular 4 Appl
 
 | Properties     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| query            |                                                                                            |
-| update           |                           |
-| insert       |  |
-| delete |                            |
+| query            |  get all data. Type : String                                                                                          |
+| update           |     update data. Type : String                      |
+| insert       |  | insert data. Type: String
+| delete | delete data. Type: String                           |
 
 
 ## Views
@@ -138,20 +138,24 @@ Active Record is a helper library for connect API in your client (Angular 4 Appl
    form
 
    #### Methods
-   formSubmit(f: NgForm)
-   ngAfterViewInit
-   ngOnInit
 
-
+  | Methods    | Description                                                                                                           |
+| ---------         | -----------                                                                                                           |
+|     formSubmit(f: NgForm)        |                                                                           |
+|    ngAfterViewInit    |                                                                           |
+|        ngOnInit       |                                                                           |   
+ 
   ### MooField
   `Class`
    #### Selector 
    moo-field
 
    #### Properties
-   config: any
-   name: any
-   form: MooVformComponent
+  | Properties     | Description                                                                                                           |
+| ---------         | -----------                                                                                                           |
+| config : any         |  schema                                                                    |
+| name : any         |                                                                      |
+| form: MooVformComponent   |                                                                  |
 
    #### Methods
    ngOnInit
@@ -169,16 +173,25 @@ Active Record is a helper library for connect API in your client (Angular 4 Appl
    moo-vtable
 
    #### Properties
-   columns: Field []
-   _dataSource$
-   _modelSchema
-   column
+
+   | Properties     | Description                                                                                                           |
+| ---------         | -----------                                                                                                           |
+|
+   columns: Field []  |                                                                     |
+|   _dataSource$     |                                                                      |
+|_modelSchema |                                                                  |
+|column |                                                                  |
 
    #### Methods
-   setDataSource()
-   setSchema(schema: any)
-   ngOnInit
+  
+     | Methods    | Description                                                                                                           |
+| ---------         | -----------                                                                                                           |
+|
+   setDataSource() |                                                                     |
+|  setSchema(schema: any) |                                                              |
+|  ngOnInit |                                                                  |
 
+   
   ### Field
   `Interface`
    #### Properties
