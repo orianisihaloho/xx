@@ -93,7 +93,8 @@ mooadmin-coreui-ngx/
 ```
 
 ## Class Diagram
-## Sequence Diagram
+
+
 ## Active Record
 
 Active Record is a helper library for connect API in your client Angular 4 Application.
@@ -129,6 +130,9 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
 
 ## Views
  ### Form View
+ 
+  #### MooVForm Sequence Diagram
+
   ### MooVForm
   `Class`
   
@@ -174,12 +178,15 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
 | config       |  <br/>*Type: StringField*                                                                   |
  
  ### List View
+  #### MooVList Sequence Diagram
+  
   ### MooVList  
    #### Selector
    app-moo-vlist
 
 
  ### Table View
+  #### MooVTable Sequence Diagram
   ### MooVTable
    #### Selector
    moo-vtable
@@ -220,13 +227,14 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
 
 
  ### Chart View
+  #### MooVChart Sequence Diagram
   ### MooVChart
    #### Selector
    app-moo-vchart
 
 
  ### Report View
-
+  #### MooVReport Sequence Diagram
 
 ## Creators
 - **Affandy Lamusu**
