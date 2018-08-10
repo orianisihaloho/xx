@@ -44,7 +44,6 @@ Within the download you'll find the following directories and files, logically g
 ```
 mooadmin-coreui-ngx/
 ├── .vscode/
-├── dist/
 ├── e2e/
 ├── FProject/
 ├── node_modules/
@@ -58,6 +57,7 @@ mooadmin-coreui-ngx/
 |               ├── moo-demo-routing.module
 |               ├── moo-demo.module
 |               └── ...
+|          └── ...
 |       ├── app.component
 |       ├── app.module
 |       ├── app.routing
@@ -68,6 +68,7 @@ mooadmin-coreui-ngx/
 |       ├── mooadmin-ngx
 |           ├── moo-field
 |               ├── moo-field.component
+|               ├── moo-field-string.component
 |           ├── moo-vchart/
 |               ├── moo-vchart.component
 |           ├── moo-vform/
@@ -101,7 +102,16 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
 
 ### Active Record
 `Class`  
+#### Properties
+| Properties     | Description                                                                                                           |
+| ---------         | -----------                                                                                                           |
+| modelSchema           |   **modelSchema: Dictionary<Field> = {}**                                                                                         |
+| api_url          |  url api <br/> *Type : String*                      |
+| _config         |     **_config: IBApiConfig**                   |
 
+
+
+#### Methods
 | Methods       | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
 | findAll          |   **findAll(params: any)** <br/> get all data  <br/> *Type: any*                                                                                       |
@@ -118,19 +128,60 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
 
 
 ### ApiConfig
- `Interface`
+ `Class`
 
+#### Properties
 | Properties     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
+| config            |  <br/> *Type : any*                                                                                          |
+| urlAPI           |  <br/> *Type : String*                                                                                          |
+| headers            |  <br/> *Type : any*                                                                                          |
+| methods            | <br/> **defaultMethods: MethodHttp**                                                                                         |
 | query            |  get all data<br/> *Type : String*                                                                                          |
 | update           |  update data<br/> *Type : String*                      |
 | insert          |   insert data<br/> *Type : String*                      |
 | delete | delete data<br/> *Type: String*                           |
 
+#### Methods
+| Methods     | Description                                                                                                           |
+| ---------         | -----------                                                                                                           |
+| getConfig            |  get API URL                                                                                          |
+
+### IBAConfig
+ `Interface`
+ #### Properties
+| Properties    | Description                                                                                                           |
+| ---------         | -----------                                                                                                           |
+| urlAPI           |        *Type : String*                                                                                 |
+| headers           |        *Type : any*                                                                                 |
+| methods           |        **methods: MethodHttp**                                                                              |
+
+### MethodHttp
+ `Interface`
+ #### Properties
+| Properties    | Description                                                                                                           |
+| ---------         | -----------                                                                                                           |
+| query          |        *Type : String*                                                                                 |
+| update          |        *Type : String*                                                                                 |
+| insert          |       *Type : String*                                                                               |
+| delete          |        *Type : String*                                                                               |
+| method: String          |      *Type : String*                                                                               |
+
+
+### ODataQuery
+ `Interface`
+
+ #### Properties
+| Properties    | Description                                                                                                           |
+| ---------         | -----------                                                                                                           |
+| top         |        *Type : number*                                                                                 |
+| skip         |        *Type : number*                                                                                 |
+| filter          |       *Type : String*                                                                               |
+| expand         |        *Type : String*                                                                               |
+
 
 ## Views
  ### Form View
- 
   #### MooVForm Sequence Diagram
 
   ### MooVForm
@@ -140,8 +191,12 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
    moo-vform
 
    #### Properties
-   modelSchema: Dictionary
-   onSubmit: any 
+
+| Properties    | Description                                                                                                           |
+| ---------         | -----------                                                                                                           |
+| modelSchema        |  **modelSchema: Dictionary<Field>**                                                                                 |
+| onSubmit        |        *Type: any*                                                                                 |
+| ngForm       |        **ngForm: NgForm**                                                                                 |
 
    #### Methods
 
@@ -159,10 +214,13 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
    #### Properties
   | Properties     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| config         |   schema <br/>*Type: any*                                                                  |
-| name         |  <br/>*Type: any*<br/>                                                                    |
+| config         |   **config: Field**<br/>schema <br/>                                                                 |
+| name         |  <br/>*Type: String*<br/>                                                                    |
 | form   |     **form: MooVformComponent**<br/>                                                             |
-
+| _stringFieldInputTypes  |    **_stringFieldInputTypes: string[]**<br/>*Type: String* <br/>text,number,textarea, email password                                                        |
+| isStringField   |     **isStringField(): boolean**<br/>                                                             |
+| field   |                                                                  |
+   
    #### Methods
    ngOnInit
 
@@ -174,9 +232,70 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
 
    | Properties     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
+| model      |  **model: NgModel** <br/>                                                                   |
+| value       |  <br/>*Type: String*                                                                    |
 | name        |  <br/>*Type: String*                                                                    |
 | config       |  <br/>*Type: StringField*                                                                   |
- 
+
+| _hasError       |  <br/>*Type: StringField*                                                                   | 
+
+| _errorMessage       |  <br/>*Type: any*                                                                   | 
+| required       |  String input is required<br/>                                                                   | 
+| minlength    | Has min lenght<br/>                                                                   | 
+| _istTextArea       |  <br/>*Type: boolean*                                                                   | 
+
+  #### Methods
+   | Methods    | Description                                                                                                           |
+| ---------         | -----------                                                                                                           |
+| ngOnInit    |                                                                    |
+| ngAfterViewInit     |  <br/>*Type: String*                                                                    |
+
+### Fields
+ `Class`
+ #### Methods
+ | Methods  | Description                                                                                                           |
+| ---------         | -----------                                                                                                           |
+| textField   |    **textField(c: Partial<StringField>): StringField**<br/>*Type: Partial*                                                           |
+| hiddenField     |  **hiddenField(c: Partial<HiddenField>): HiddenField**<br/>*Type: Partial*                                                                    |
+| radioField   |  **radioField(c: Partial<BooleanField>): BooleanField**<br/>*Type: Partial*                                                                    |
+### Field
+ `Interface`
+
+#### Properties
+| Properties    | Description                                                                                                           |
+| ---------         | -----------                                                                                                           |
+| inputType    |    <br/>*Type: String*                                                           |
+| model     |  <br/>*Type: String*                                                                    |
+| required    |  <br/>*Type: boolean*                                                                    |
+### StringField
+ `Interface`
+
+#### Properties
+| Properties    | Description                                                                                                           |
+| ---------         | -----------                                                                                                           |
+| placeholder    |      <br/>*Type: String*                                                           |
+| label     |  <br/>*Type: String*                                                                    |
+| minlength   |  <br/>*Type: number*                                                                    |
+| maxlength   |  <br/>*Type: number*                                                                    |
+
+### BooleanField
+ `Interface`
+
+#### Properties
+| Properties    | Description                                                                                                           |
+| ---------         | -----------                                                                                                           |
+| checked   |      *checked: true* <br/>                                                          |
+
+### HiddenField
+ `Interface`
+
+
+
+
+
+
+
+
  ### List View
   #### MooVList Sequence Diagram
   
@@ -184,7 +303,7 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
    #### Selector
    app-moo-vlist
 
-
+= 
  ### Table View
   #### MooVTable Sequence Diagram
   ### MooVTable
