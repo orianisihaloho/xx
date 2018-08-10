@@ -236,9 +236,7 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
 | value       |  <br/>*Type: String*                                                                    |
 | name        |  <br/>*Type: String*                                                                    |
 | config       |  <br/>*Type: StringField*                                                                   |
-
 | _hasError       |  <br/>*Type: StringField*                                                                   | 
-
 | _errorMessage       |  <br/>*Type: any*                                                                   | 
 | required       |  String input is required<br/>                                                                   | 
 | minlength    | Has min lenght<br/>                                                                   | 
