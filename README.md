@@ -222,8 +222,11 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
 | field   |                                                                  |
    
    #### Methods
-   ngOnInit
+ | Methods     | Description                                                                                                           |
+| ---------         | -----------                                                                                                           |
+|  ngOnInit    |   A callback method that is invoked immediately after the default change detector has checked the directive's data-bound properties for the first time, and before any of the view or content children have been checked. It is invoked only once when the directive is instantiated.                                                                             |
 
+   
   ### MooFieldStringComponent
    #### Selector
    moo-field-string
@@ -243,7 +246,7 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
 | _istTextArea       |  <br/>*Type: boolean*                                                                   | 
 
   #### Methods
-   | Methods    | Description                                                                                                           |
+   | Methods    | Description                                                                                                  |
 | ---------         | -----------                                                                                                           |
 | ngOnInit    |                                                                    |
 | ngAfterViewInit     |  <br/>*Type: String*                                                                    |
@@ -337,10 +340,6 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
 | inputType           |  <br/> *Type : String*                                                                                          |
 | model           |  <br/> *Type : String*                      |
 | required          |   declare the Field is required or not <br/> *Type : Boolean*                      |
-
-
-
-
 
  ### Chart View
   #### MooVChart Sequence Diagram
