@@ -301,7 +301,6 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
    #### Selector
    app-moo-vlist
 
-= 
  ### Table View
   #### MooVTable Sequence Diagram
   ### MooVTable
@@ -365,7 +364,7 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
 
 - **Ronald**
 
-<https://github.com/>
+<https://github.com/ronald1402>
 
 
 - **Oriani**
