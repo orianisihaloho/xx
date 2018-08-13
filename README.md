@@ -106,7 +106,7 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
 | Properties     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
 | modelSchema           |   **modelSchema: Dictionary<Field> = {}**                                                                                         |
-| api_url          |  url api <br/> *Type : String*                      |
+| api_url          |  URL API <br/> *Type : String*                      |
 | _config         |     **_config: IBApiConfig**                   |
 
 
@@ -114,17 +114,17 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
 #### Methods
 | Methods       | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| findAll          |   **findAll(params: any)** <br/> get all data  <br/> *Type: any*                                                                                       |
-| findAllODataQuery |      **findAllODataQuery(params: ODataQuery):Observable<T[]>** ,<br/> get all data <br/> *Type: Observable*                  |
-| search            |    **search (data: any,api_search_name: string):Observable<T[]>** <br/> get all data    <br/> *Type: Observable*                   |
-| find   |  **find(id: any): Observable<T>** <br/> get data by id <br/> *Type: Observable* |
-| update        |  **update(id: any, data: any)** <br/> update data by id <br/> *Type: any*                                                                                       |
-| insert  | **insert(data: any)** <br/> insert data   <br/> *Type: any*                        |
-| delete      |  **delete(data: any)** <br/> delete data by id  <br/> *Type: any*                                  |
-| generateParam     | **generateParam(params: any)** <br/> generate paramater in any type                  |
-| generateParamODataQuery |**generateParamODataQuery(query: ODataQuery)** <br/> generate a paramater that can be used to modify an ODataQuery in the query string of the request URI                            |
-| processData        |    **processData(res: Response)** <br/> response data type json                 |
-| handleError      |    **handleError(error: any)** <br/> handle any error that occurred <br/> *Type: any*                  |
+| findAll          |   **findAll(params: any)** <br/> Get all data  <br/> *Type: any*                                                                                       |
+| findAllODataQuery |      **findAllODataQuery(params: ODataQuery):Observable<T[]>** ,<br/> Get all data <br/> *Type: Observable*                  |
+| search            |    **search (data: any,api_search_name: string):Observable<T[]>** <br/> Get all data    <br/> *Type: Observable*                   |
+| find   |  **find(id: any): Observable<T>** <br/> Get data by id <br/> *Type: Observable* |
+| update        |  **update(id: any, data: any)** <br/> Update data by id <br/> *Type: any*                                                                                       |
+| insert  | **insert(data: any)** <br/> Insert data   <br/> *Type: any*                        |
+| delete      |  **delete(data: any)** <br/> Delete data by id  <br/> *Type: any*                                  |
+| generateParam     | **generateParam(params: any)** <br/> Generate paramater in any type                  |
+| generateParamODataQuery |**generateParamODataQuery(query: ODataQuery)** <br/> Generate a paramater that can be used to modify an ODataQuery in the query string of the request URI                            |
+| processData        |    **processData(res: Response)** <br/> Response data type json                 |
+| handleError      |    **handleError(error: any)** <br/> Handle any error that occurred <br/> *Type: any*                  |
 
 
 ### ApiConfig
@@ -137,15 +137,15 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
 | urlAPI           |  <br/> *Type : String*                                                                                          |
 | headers            |  <br/> *Type : any*                                                                                          |
 | methods            | <br/> **defaultMethods: MethodHttp**                                                                                         |
-| query            |  get all data<br/> *Type : String*                                                                                          |
-| update           |  update data<br/> *Type : String*                      |
-| insert          |   insert data<br/> *Type : String*                      |
-| delete | delete data<br/> *Type: String*                           |
+| query            |  Get all data<br/> *Type : String*                                                                                          |
+| update           |  Update data<br/> *Type : String*                      |
+| insert          |   Insert data<br/> *Type : String*                      |
+| delete | Delete data<br/> *Type: String*                           |
 
 #### Methods
 | Methods     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| getConfig            |  get API URL                                                                                          |
+| getConfig            | **getConfig()**<br/> Get configuration API URL, headers and methods                                                                                          |
 
 ### IBAConfig
  `Interface`
@@ -202,7 +202,7 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
 
   | Methods    | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-|     formSubmit        |    **formSubmit ( f: NgForm)**<br/> a method that is submitted from NgForm                                                                       |
+|     formSubmit        |    **formSubmit ( f: NgForm)**<br/> A method that is submitted from NgForm                                                                       |
 |    ngAfterViewInit    |     A callback method that is invoked immediately after Angular has completed initialization of a component's view. It is invoked only once when the view is instantiated.                                                                      |
 |        ngOnInit       |      A callback method that is invoked immediately after the default change detector has checked the directive's data-bound properties for the first time, and before any of the view or content children have been checked. It is invoked only once when the directive is instantiated.                                                                     |   
  
@@ -215,7 +215,7 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
   | Properties     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
 | config         |   **config: Field**<br/>schema <br/>                                                                 |
-| name         |  <br/>*Type: String*<br/>                                                                    |
+| name         |  *Type: String*<br/>                                                                    |
 | form   |     **form: MooVformComponent**<br/>                                                             |
 | _stringFieldInputTypes  |    **_stringFieldInputTypes: string[]**<br/>*Type: String* <br/>text,number,textarea, email password                                                        |
 | isStringField   |     **isStringField(): boolean**<br/>                                                             |
@@ -248,8 +248,8 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
   #### Methods
    | Methods    | Description                                                                                                  |
 | ---------         | -----------                                                                                                           |
-| ngOnInit    |                                                                    |
-| ngAfterViewInit     |  <br/>*Type: String*                                                                    |
+| ngOnInit    |   A callback method that is invoked immediately after the default change detector has checked the directive's data-bound properties for the first time, and before any of the view or content children have been checked. It is invoked only once when the directive is instantiated.                                                                   |
+| ngAfterViewInit     |   A callback method that is invoked immediately after Angular has completed initialization of a component's view. It is invoked only once when the view is instantiated.                                                                     |
 
 ### Fields
  `Class`
@@ -260,24 +260,24 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
 | hiddenField     |  **hiddenField(c: Partial<HiddenField>): HiddenField**<br/>*Type: Partial*                                                                    |
 | radioField   |  **radioField(c: Partial<BooleanField>): BooleanField**<br/>*Type: Partial*                                                                    |
 ### Field
- `Interface`
+ `Interface`   Abstraction for hold configuration
 
 #### Properties
 | Properties    | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| inputType    |    <br/>*Type: String*                                                           |
-| model     |  <br/>*Type: String*                                                                    |
-| required    |  <br/>*Type: boolean*                                                                    |
+| inputType    |    *Type: String*<br/>                                                           |
+| model     | *Type: String* <br/>                                                                   |
+| required    |  Declare the Field is required or not <br/>*Type: boolean*                                                                    |
 ### StringField
  `Interface`
 
 #### Properties
 | Properties    | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| placeholder    |      <br/>*Type: String*                                                           |
-| label     |  <br/>*Type: String*                                                                    |
-| minlength   |  <br/>*Type: number*                                                                    |
-| maxlength   |  <br/>*Type: number*                                                                    |
+| placeholder    |      *Type: String*<br/>                                                           |
+| label     |  *Type: String*<br/>                                                                    |
+| minlength   |  *Type: number* <br/>                                                                   |
+| maxlength   |  *Type: number*<br/>                                                                    |
 
 ### BooleanField
  `Interface`
@@ -285,17 +285,10 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
 #### Properties
 | Properties    | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| checked   |      *checked: true* <br/>                                                          |
+| checked   |      **checked: true** <br/>                                                          |
 
 ### HiddenField
  `Interface`
-
-
-
-
-
-
-
 
  ### List View
   #### MooVList Sequence Diagram
@@ -304,20 +297,36 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
    #### Selector
    app-moo-vlist
 
+  #### Properties
+  
+  | Properties     | Description                                                                                                           |
+| ---------         | -----------                                                                                                           |
+| _dataSource$          |   Initialize variabel  <br/>*Type Observable*                       |
+| _modelSchema      |  | **_modelSchema:Dictionary<Field>**<br/>Schema                |
+
+
+  #### Methods
+  
+  | Methods     | Description                                                                                                           |
+| ---------         | -----------                                                                                                           |
+| setDataSource         |   **setDataSource(data: Observable<any>)**<br/>*Type Observable*                       |
+| setSchema      |  | **setSchema(schema: any)**<br/>Schema                |
+| ngOnInit     |  | **ngOnInit()**<br/>              |
+
+
  ### Table View
   #### MooVTable Sequence Diagram
-  ### MooVTable
+  ### MooVTablen
    #### Selector
    moo-vtable
-
 
 
    #### Properties
   
   | Properties     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| columns          |  **columns: Field []**<br/> initialize field in array                                                                                         |
-| _dataSource$          |   initialize variabel  <br/>*Type observable*                       |
+| columns          |  **columns: Field []**<br/>Initialize field in array                                                                                         |
+| _dataSource$          |   Initialize variabel  <br/>*Type observable*                       |
 | _modelSchema      |  | **_modelSchema:Dictionary<Field>**<br/>Schema                |
 
 
@@ -326,20 +335,9 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
     
   | Methods     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| setDataSource()          |    **setDataSource(data: Observable<any>)**<br/> set new  datasource                                                                                    |
-| setSchema()          |   **setSchema(schema: any)**<br/>  set new Schema                       |
+| setDataSource()          |    **setDataSource(data: Observable<any>)**<br/> Set new  datasource                                                                                    |
+| setSchema()          |   **setSchema(schema: any)**<br/>  Set new Schema                       |
 | ngOnInit     |  |   A callback method that is invoked immediately after the default change detector has checked the directive's data-bound properties for the first time, and before any of the view or content children have been checked. It is invoked only once when the directive is instantiated.                       |
-
-   
-  ### Field
-  `Interface`
-   Abstraction for hold configuration
-   #### Properties
-| Properties     | Description                                                                                                           |
-| ---------         | -----------                                                                                                           |
-| inputType           |  <br/> *Type : String*                                                                                          |
-| model           |  <br/> *Type : String*                      |
-| required          |   declare the Field is required or not <br/> *Type : Boolean*                      |
 
  ### Chart View
   #### MooVChart Sequence Diagram
