@@ -184,7 +184,7 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
   #### MooVForm Sequence Diagram
 
   ### MooVForm
-  `Component`
+  `Component` <br/>
   A component that makes it easy to create form
   
    #### Selector
@@ -195,8 +195,8 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
 | Properties    | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
 | modelSchema        |  **modelSchema: Dictionary<Field>**                                                                                 |
-| @Input(onSubmit)        |      The @Input decorator with a variable name as `onSubmit` to pass data from component. Use to bind the element in the template <br/> *Type: any*                                                                                 |
-| ngForm       |    **ngForm: NgForm** <br/> Define the child component tree of current component                                                                                 |
+| @Input(onSubmit)        |      The @Input decorator with a variable name as `onSubmit` to pass data from component. Use to bind the element in the template. <br/> *Type: any*                                                                                 |
+| @ViewChild(ngForm)       |    **ngForm: NgForm** <br/>Query for a VIEW child of type NgForm                                                             |
 
    #### Methods
 
@@ -283,11 +283,11 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
 | ---------         | -----------                                                                                                           |
 | placeholder    |    Text in the input field *Type: String*<br/>                                                           |
 | label     |  Text title *Type: String*<br/>                                                                    |
-| minlength   |  String Input has min length *Type: number* <br/>                                                                   |
-| maxlength   |  String Input has max length *Type: number*<br/>                                                                    |
-| pattern  |  String Input has pattern *Type: number*<br/>                                                                    |
-| row  |   *Type: number*<br/>                                                                    |
-| col   |   *Type: number*<br/>                                                                    |
+| minlength   |  String Input has min length<br/>*Type: number* <br/>                                                                   |
+| maxlength   |  String Input has max length<br/>*Type: number*<br/>                                                                    |
+| pattern  |  String Input has pattern<br/>*Type: number*<br/>                                                                    |
+| row  |   size of text area field *Type: number*<br/>                                                                    |
+| col   |  size of text area field *Type: number*<br/>                                                                    |
 ### BooleanField
  `Interface`
 
@@ -313,7 +313,7 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
   
   | Properties     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| _dataSource$          |   Variabel name  <br/>*Type Observable*                       |
+| _dataSource$          |  Variabel name  <br/>*Type Observable*                       |
 | _modelSchema      |  | **_modelSchema:Dictionary<Field>**<br/>Schema                |
 
   #### Methods
@@ -331,6 +331,7 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
 
  ### Table View
   #### MooVTable Sequence Diagram
+
   ### MooVTable
   `Component`
    A component that makes it easy to create table
@@ -343,7 +344,7 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
   | Properties     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
 | columns          |  **columns: Field []**<br/>Initialize field in array                                                                                         |
-| _dataSource$          |   Initialize variabel  <br/>*Type observable*                       |
+| _dataSource$          | *Type observable*                       |
 | _modelSchema      |  | **_modelSchema:Dictionary<Field>**<br/>Schema                |
 
 
@@ -358,6 +359,7 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
 
  ### Chart View
   #### MooVChart Sequence Diagram
+  
   ### MooVChart
    #### Selector
    app-moo-vchart
