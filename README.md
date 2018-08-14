@@ -110,7 +110,6 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
 | _config         |     **_config: IBApiConfig**                   |
 
 
-
 #### Methods
 | Methods       | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
@@ -133,10 +132,10 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
 #### Properties
 | Properties     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| config            |  <br/> *Type : any*                                                                                          |
-| urlAPI           |  <br/> *Type : String*                                                                                          |
-| headers            |  <br/> *Type : any*                                                                                          |
-| methods            | <br/> **defaultMethods: MethodHttp**                                                                                         |
+| config            |  *Type : any*                                                                                          |
+| urlAPI           |  *Type : String*                                                                                          |
+| headers            |  *Type : any*                                                                                          |
+| methods            | **defaultMethods: MethodHttp**                                                                                         |
 | query            |  Get all data<br/> *Type : String*                                                                                          |
 | update           |  Update data<br/> *Type : String*                      |
 | insert          |   Insert data<br/> *Type : String*                      |
@@ -145,7 +144,7 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
 #### Methods
 | Methods     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| getConfig            | **getConfig()**<br/> Get configuration API URL, headers and methods                                                                                          |
+| getConfig            | **getConfig()**<br/> Return configuration API URL, headers and methods                                                                                          |
 
 ### IBAConfig
  `Interface`
@@ -185,7 +184,8 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
   #### MooVForm Sequence Diagram
 
   ### MooVForm
-  `Class`
+  `Component`
+  A component that makes it easy to create form
   
    #### Selector
    moo-vform
@@ -195,35 +195,42 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
 | Properties    | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
 | modelSchema        |  **modelSchema: Dictionary<Field>**                                                                                 |
-| onSubmit        |        *Type: any*                                                                                 |
-| ngForm       |        **ngForm: NgForm**                                                                                 |
+| @Input(onSubmit)        |      The @Input decorator with a variable name as `onSubmit` to pass data from component. Use to bind the element in the template <br/> *Type: any*                                                                                 |
+| ngForm       |    **ngForm: NgForm** <br/> Define the child component tree of current component                                                                                 |
 
    #### Methods
 
   | Methods    | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-|     formSubmit        |    **formSubmit ( f: NgForm)**<br/> A method that is submitted from NgForm                                                                       |
+|     formSubmit        |    **formSubmit ( f: NgForm)**<br/> A method that is submitted from NgForm . There is postContact() with property (id,name,number).                                                                  |
+|     postContact      |    **postContact ( contact: Contact)**<br/> A method to insert data contact.                                                                 |
 |    ngAfterViewInit    |     A callback method that is invoked immediately after Angular has completed initialization of a component's view. It is invoked only once when the view is instantiated.                                                                      |
 |        ngOnInit       |      A callback method that is invoked immediately after the default change detector has checked the directive's data-bound properties for the first time, and before any of the view or content children have been checked. It is invoked only once when the directive is instantiated.                                                                     |   
  
   ### MooField
-  `Class`
+  `Directive`
+  The MooField directive represents an individal field with variable `name`as name of field
+
    #### Selector 
    moo-field
 
+   #### Inputs
+   | Input    | Description                                                                                                           |
+| ---------         | -----------                                                                                                           |
+| name        |    The name of field*Type: String*<br/>                                                                 |
+  
    #### Properties
   | Properties     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| config         |   **config: Field**<br/>schema <br/>                                                                 |
-| name         |  *Type: String*<br/>                                                                    |
-| form   |     **form: MooVformComponent**<br/>                                                             |
-| _stringFieldInputTypes  |    **_stringFieldInputTypes: string[]**<br/>*Type: String* <br/>text,number,textarea, email password                                                        |
-| isStringField   |     **isStringField(): boolean**<br/>                                                             |
-| field   |                                                                  |
-   
+| config         |   **config: Field**<br/> Schema for field <br/>                                                                 |
+|@Input(name)         |  The @Input decorator with a variable name as `name` to pass data from component. Use to bind the element in the template <br/>*Type: String*                                                                    |
+| _stringFieldInputTypes  |    **_stringFieldInputTypes: string[]**<br/> Type of input for String Field in array. There are text, number, textarea, email, and password <br/>*Type: String*                                                     |
+| form   |  **form: MooVformComponent**<br/>initialize dependencies of MooVformComponent on property name `form`                                                                |
+
    #### Methods
  | Methods     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
+| isStringField   |   **get isStringField(): boolean**<br/> return _stringFieldInputTypes                                                              |
 |  ngOnInit    |   A callback method that is invoked immediately after the default change detector has checked the directive's data-bound properties for the first time, and before any of the view or content children have been checked. It is invoked only once when the directive is instantiated.                                                                             |
 
    
@@ -232,53 +239,55 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
    moo-field-string
    
    #### Properties
-
    | Properties     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| model      |  **model: NgModel** <br/>                                                                   |
-| value       |  <br/>*Type: String*                                                                    |
-| name        |  <br/>*Type: String*                                                                    |
-| config       |  <br/>*Type: StringField*                                                                   |
-| _hasError       |  <br/>*Type: StringField*                                                                   | 
-| _errorMessage       |  <br/>*Type: any*                                                                   | 
-| required       |  String input is required<br/>                                                                   | 
-| minlength    | Has min lenght<br/>                                                                   | 
-| _istTextArea       |  <br/>*Type: boolean*                                                                   | 
-
+| @ViewChild(model)      |  **model: NgModel** <br/>Query for a VIEW child of type NgModel                                                                 |
+| value       |  *Type: String*                                                                    |
+| _config       |  initialize variable name `_config` for StringField                                                                   |
+| _hasError       |   whether Field has error <br/>*Type: boolean*                                                                   | 
+| _errorMessage       |  initialize variable name `_errorMessage` for error message in input type such as required, minlength of input, and email pattern           <br/>*Type: any*                                                                   | 
+| required       | whether Field is required                                                                   | 
+| minlength    | String Has min length                                                                  | 
+| emailPattern   | check  email pattern in String input                                                                  || field   |       initialize dependencies of MooFieldComponent on property name `field`                                                                | 
   #### Methods
    | Methods    | Description                                                                                                  |
 | ---------         | -----------                                                                                                           |
+| _istTextArea       |  **get isTextArea()**<br/>check wheter inputType is text area <br/>*Type: boolean*                                                                   | 
+
 | ngOnInit    |   A callback method that is invoked immediately after the default change detector has checked the directive's data-bound properties for the first time, and before any of the view or content children have been checked. It is invoked only once when the directive is instantiated.                                                                   |
 | ngAfterViewInit     |   A callback method that is invoked immediately after Angular has completed initialization of a component's view. It is invoked only once when the view is instantiated.                                                                     |
 
 ### Fields
  `Class`
+ A class to declare field types (texfield, hidden field, radiofield)
  #### Methods
  | Methods  | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| textField   |    **textField(c: Partial<StringField>): StringField**<br/>*Type: Partial*                                                           |
-| hiddenField     |  **hiddenField(c: Partial<HiddenField>): HiddenField**<br/>*Type: Partial*                                                                    |
-| radioField   |  **radioField(c: Partial<BooleanField>): BooleanField**<br/>*Type: Partial*                                                                    |
+| textField   |    **textField(c: Partial<StringField>): StringField**<br/>Return input as StringField <br/>*Type: Partial*                                                           |
+| hiddenField     |  **hiddenField(c: Partial<HiddenField>): HiddenField**<br/>Return input as HiddenField<br/>*Type: Partial*                                                                    |
+| radioField   |  **radioField(c: Partial<BooleanField>): BooleanField**<br/>Return input as BooleanField*Type: Partial*                                                                    |
 ### Field
  `Interface`   Abstraction for hold configuration
 
 #### Properties
 | Properties    | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| inputType    |    *Type: String*<br/>                                                           |
+| inputType    |    Type of input *Type: String*<br/>                                                           |
 | model     | *Type: String* <br/>                                                                   |
-| required    |  Declare the Field is required or not <br/>*Type: boolean*                                                                    |
+| required    |  whether the Field is required  <br/>*Type: boolean*                                                                    |
 ### StringField
  `Interface`
 
 #### Properties
 | Properties    | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| placeholder    |      *Type: String*<br/>                                                           |
-| label     |  *Type: String*<br/>                                                                    |
-| minlength   |  *Type: number* <br/>                                                                   |
-| maxlength   |  *Type: number*<br/>                                                                    |
-
+| placeholder    |    Text in the input field *Type: String*<br/>                                                           |
+| label     |  Text title *Type: String*<br/>                                                                    |
+| minlength   |  String Input has min length *Type: number* <br/>                                                                   |
+| maxlength   |  String Input has max length *Type: number*<br/>                                                                    |
+| pattern  |  String Input has pattern *Type: number*<br/>                                                                    |
+| row  |   *Type: number*<br/>                                                                    |
+| col   |   *Type: number*<br/>                                                                    |
 ### BooleanField
  `Interface`
 
@@ -293,17 +302,19 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
  ### List View
   #### MooVList Sequence Diagram
   
-  ### MooVList  
+  ### MooVList 
+  `Component`
+  A component that makes it easy to create list
+   
    #### Selector
-   app-moo-vlist
+   moo-vlist
 
   #### Properties
   
   | Properties     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| _dataSource$          |   Initialize variabel  <br/>*Type Observable*                       |
+| _dataSource$          |   Variabel name  <br/>*Type Observable*                       |
 | _modelSchema      |  | **_modelSchema:Dictionary<Field>**<br/>Schema                |
-
 
   #### Methods
   
@@ -311,12 +322,18 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
 | ---------         | -----------                                                                                                           |
 | setDataSource         |   **setDataSource(data: Observable<any>)**<br/>*Type Observable*                       |
 | setSchema      |  | **setSchema(schema: any)**<br/>Schema                |
-| ngOnInit     |  | **ngOnInit()**<br/>              |
+| ngOnInit     |  | **ngOnInit()**<br/>  A callback method that is invoked immediately after the default change detector has checked the directive's data-bound properties for the first time, and before any of the view or content children have been checked. It is invoked only once when the directive is instantiated.                   |
+
+### NgTemplate
+  `Directive`
+  The NgTemplate directive represents an individuaal list
 
 
  ### Table View
   #### MooVTable Sequence Diagram
   ### MooVTable
+  `Component`
+   A component that makes it easy to create table
    #### Selector
    moo-vtable
 
@@ -345,9 +362,9 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
    #### Selector
    app-moo-vchart
 
-
  ### Report View
   #### MooVReport Sequence Diagram
+  
 
 ## Creators
 - **Affandy Lamusu**
