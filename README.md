@@ -252,9 +252,11 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
   #### Methods
    | Methods    | Description                                                                                                  |
 | ---------         | -----------                                                                                                           |
-| _istTextArea       |  **get isTextArea()**<br/>check wheter inputType is text area <br/>*Type: boolean*
-                      | 
+| _istTextArea       |  **get isTextArea()**<br/>check wheter inputType is text area <br/>*Type: boolean* | 
+| _istTextArea       |  **get isTextArea()**<br/>check wheter inputType is text area <br/>*Type: boolean* | 
+| _istTextArea       |  **get isTextArea()**<br/>check wheter inputType is text area <br/>*Type: boolean* | 
 | ngOnInit    |   A callback method that is invoked immediately after the default change detector has checked the directive's data-bound properties for the first time, and before any of the view or content children have been checked. It is invoked only once when the directive is instantiated.                                                                   |
+
 | ngAfterViewInit     |   A callback method that is invoked immediately after Angular has completed initialization of a component's view. It is invoked only once when the view is instantiated.                                                                     |
 
 ### Fields
