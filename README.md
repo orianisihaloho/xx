@@ -311,7 +311,8 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
   
   | Properties     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| _dataSource$          |  <br/>*Type Observable*                       |
+| _dataSource$          |  *Type Observable*                       |
+
 | _modelSchema      |  | **_modelSchema:Dictionary<Field>**<br/>Schema                |
 
   #### Methods
@@ -346,7 +347,7 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
 | ---------         | -----------                                                                                                           |
 | columns          |  **columns: Field []**<br/> Field in array                                                                                    |
 | _dataSource$          | *Type observable*                       |
-| _modelSchema      |  | **_modelSchema:Dictionary<Field>**<br/>Schema                |
+| _modelSchema         | **_modelSchema:Dictionary<Field>**<br/>Schema                       |
 
 
    #### Methods
