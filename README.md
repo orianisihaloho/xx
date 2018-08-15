@@ -93,9 +93,6 @@ mooadmin-coreui-ngx/
 └── ...
 ```
 
-## Class Diagram
-
-
 ## Active Record
 
 Active Record is a helper library for connect API in your client Angular 4 Application.
@@ -108,7 +105,6 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
 | modelSchema           |  **modelSchema: Dictionary<Field> = {}**<br/> Schema for fields based on your requirement of fields                                             |
 | api_url          |  URL for connect to API <br/> *Type : String*                      |
 | _config         |     **_config: IBApiConfig**                   |
-
 
 #### Methods
 | Methods       | Description                                                                                                           |
@@ -187,8 +183,6 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
 | modelSchema           |  **modelSchema[]** <br/> Schema for fields based on your requirement of fields                                             |
 ## Views
  ### Form View
-  #### MooVForm Sequence Diagram
-
   ### MooVForm
   `Component` <br/>
   A component that makes it easy to create form
@@ -306,8 +300,6 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
  `Interface`
 
  ### List View
-  #### MooVList Sequence Diagram
-  
   ### MooVList 
   `Component`
   A component that makes it easy to create list
@@ -337,8 +329,6 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
 
 
  ### Table View
-  #### MooVTable Sequence Diagram
-
   ### MooVTable
   `Component`
    A component that makes it easy to create table
@@ -367,15 +357,15 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
 | setSchema()          |   **setSchema(schema: any)**<br/>  Set new Schema                       |
 | ngOnInit     |  |   A callback method that is invoked immediately after the default change detector has checked the directive's data-bound properties for the first time, and before any of the view or content children have been checked. It is invoked only once when the directive is instantiated.                       |
 
- ### Chart View
-  #### MooVChart Sequence Diagram
-  
+ ### Chart View 
   ### MooVChart
    #### Selector
-   app-moo-vchart
+   moo-vchart
 
- ### Report View
-  #### MooVReport Sequence Diagram
+ ### Report View   
+   ### MooVReport
+   #### Selector
+   moo-vreport
 
 
 ## Creators
