@@ -327,14 +327,13 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
   | Methods     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
 | setDataSource         |   **setDataSource(data: Observable<any>)**<br/>*Type Observable*                       |
-| setDataSource         |   **setDataSource(data: Observable<any>)**<br/>*Type Observable*                       |
-| setSchema      |  | **setSchema(schema: any)**<br/>Schema                |
-| ngOnInit     |  | **ngOnInit()**<br/>A callback method that is invoked immediately after the default change detector has checked the directive's data-bound properties for the first time, and before any of the view or content children have been checked. It is invoked only once when the directive is instantiated.                  
-|
+| setSchema         |   **setSchema(schema: any)**<br/>Schema                       |
+| ngOnInit        | **ngOnInit()**<br/>A callback method that is invoked immediately after the default change detector has checked the directive's data-bound properties for the first time, and before any of the view or content children have been checked. It is invoked only once when the directive is instantiated.                         |
+
 
 ### NgTemplate
   `Directive`
-  The NgTemplate directive represents an individuaal list
+  The NgTemplate directive represents an individual list
 
 
  ### Table View
