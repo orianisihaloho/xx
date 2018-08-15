@@ -105,8 +105,8 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
 #### Properties
 | Properties     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| modelSchema           |   **modelSchema: Dictionary<Field> = {}**                                                                                         |
-| api_url          |  URL API <br/> *Type : String*                      |
+| modelSchema           |  **modelSchema: Dictionary<Field> = {}**<br/> Schema for fields based on your requirement of fields                                             |
+| api_url          |  URL for connect to API <br/> *Type : String*                      |
 | _config         |     **_config: IBApiConfig**                   |
 
 
@@ -177,8 +177,14 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
 | skip         |        *Type : number*                                                                                 |
 | filter          |       *Type : String*                                                                               |
 | expand         |        *Type : String*                                                                               |
+### Contact Service
+`Injectable`
 
-
+#### Properties
+| Properties     | Description                                                                                                           |
+| ---------         | -----------                                                                                                           |
+| api_url          |  URL for connect to API <br/> *Type : String*                      |
+| modelSchema           |  **modelSchema[]** <br/> Schema for fields based on your requirement of fields                                             |
 ## Views
  ### Form View
   #### MooVForm Sequence Diagram
@@ -313,7 +319,7 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
   
   | Properties     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| _dataSource$          |  Variabel name  <br/>*Type Observable*                       |
+| _dataSource$          |  <br/>*Type Observable*                       |
 | _modelSchema      |  | **_modelSchema:Dictionary<Field>**<br/>Schema                |
 
   #### Methods
@@ -338,19 +344,22 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
    #### Selector
    moo-vtable
 
+   #### Input
+  col.label
+  data[col.model]
+  
 
    #### Properties
   
   | Properties     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| columns          |  **columns: Field []**<br/>Initialize field in array                                                                                         |
+| columns          |  **columns: Field []**<br/> Field in array                                                                                    |
 | _dataSource$          | *Type observable*                       |
 | _modelSchema      |  | **_modelSchema:Dictionary<Field>**<br/>Schema                |
 
 
    #### Methods
-  
-    
+ 
   | Methods     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
 | setDataSource()          |    **setDataSource(data: Observable<any>)**<br/> Set new  datasource                                                                                    |
