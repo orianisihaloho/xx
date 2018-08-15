@@ -230,7 +230,7 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
    #### Methods
  | Methods     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| isStringField   |   **get isStringField(): boolean**<br/> return _stringFieldInputTypes                                                              |
+| isStringField   |   **get isStringField(): boolean**<br/> Return _stringFieldInputTypes                                                              |
 |  ngOnInit    |   A callback method that is invoked immediately after the default change detector has checked the directive's data-bound properties for the first time, and before any of the view or content children have been checked. It is invoked only once when the directive is instantiated.                                                                             |
 
    
@@ -252,20 +252,20 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
   #### Methods
    | Methods    | Description                                                                                                  |
 | ---------         | -----------                                                                                                           |
-| _istTextArea       |  **get isTextArea()**<br/>check wheter inputType is text area <br/>*Type: boolean* | 
+| _istTextArea       |  **get isTextArea()**<br/>Check wheter inputType is text area <br/>*Type: boolean* | 
 | ngOnInit       |  A callback method that is invoked immediately after the default change detector has checked the directive's data-bound properties for the first time, and before any of the view or content children have been checked. It is invoked only once when the directive is instantiated.     | 
 | ngAfterViewInit       |  A callback method that is invoked immediately after Angular has completed initialization of a component's view. It is invoked only once when the view is instantiated. | 
 
 
 ### Fields
  `Class`
- A class to declare field types (texfield, hidden field, radiofield)
+ A class to declare field types (texField, hiddenField, and radioField)
  #### Methods
  | Methods  | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| textField   |    **textField(c: Partial<StringField>): StringField**<br/>Return input as StringField <br/>*Type: Partial*                                                           |
-| hiddenField     |  **hiddenField(c: Partial<HiddenField>): HiddenField**<br/>Return input as HiddenField<br/>*Type: Partial*                                                                    |
-| radioField   |  **radioField(c: Partial<BooleanField>): BooleanField**<br/>Return input as BooleanField<br/>*Type: Partial*                                                                    |
+| textField   |    **textField(c: Partial<StringField>): StringField**<br/>Return field types as StringField <br/>*Type: Partial*                                                           |
+| hiddenField     |  **hiddenField(c: Partial<HiddenField>): HiddenField**<br/>Return field types as HiddenField<br/>*Type: Partial*                                                                    |
+| radioField   |  **radioField(c: Partial<BooleanField>): BooleanField**<br/>Return field types as BooleanField<br/>*Type: Partial*                                                                    |
 ### Field
  `Interface`   Abstraction for hold configuration
 
@@ -312,8 +312,7 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
   | Properties     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
 | _dataSource$          |  *Type Observable*                       |
-
-| _modelSchema      |  | **_modelSchema:Dictionary<Field>**<br/>Schema                |
+| _modelSchema      |  |**_modelSchema:Dictionary<Field>**<br/>Schema                |
 
   #### Methods
   
@@ -356,6 +355,7 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
 | ---------         | -----------                                                                                                           |
 | setDataSource()          |    **setDataSource(data: Observable<any>)**<br/> Set new  datasource                                                                                    |
 | setSchema()          |   **setSchema(schema: any)**<br/>  Set new Schema                       |
+| ngOnInit()          |    A callback method that is invoked immediately after the default change detector has checked the directive's data-bound properties for the first time, and before any of the view or content children have been checked. It is invoked only once when the directive is instantiated.             |
 | ngOnInit     |  |   A callback method that is invoked immediately after the default change detector has checked the directive's data-bound properties for the first time, and before any of the view or content children have been checked. It is invoked only once when the directive is instantiated.                       |
 
  ### Chart View 
