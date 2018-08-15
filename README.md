@@ -223,7 +223,7 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
    #### Inputs
    | Input    | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| name        |    The name of field*Type: String*<br/>                                                                 |
+| name        |    The name of field<br/>*Type: String*<br/>                                                                 |
   
    #### Properties
   | Properties     | Description                                                                                                           |
@@ -231,7 +231,7 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
 | config         |   **config: Field**<br/> Schema for field <br/>                                                                 |
 |@Input(name)         |  The @Input decorator with a variable name as `name` to pass data from component. Use to bind the element in the template <br/>*Type: String*                                                                    |
 | _stringFieldInputTypes  |    **_stringFieldInputTypes: string[]**<br/> Type of input for String Field in array. There are text, number, textarea, email, and password <br/>*Type: String*                                                     |
-| form   |  **form: MooVformComponent**<br/>initialize dependencies of MooVformComponent on property name `form`                                                                |
+| form   |  **form: MooVformComponent**<br/>Initialize dependencies of MooVformComponent on property name `form`                                                                |
 
    #### Methods
  | Methods     | Description                                                                                                           |
@@ -249,12 +249,12 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
 | ---------         | -----------                                                                                                           |
 | @ViewChild(model)      |  **model: NgModel** <br/>Query for a VIEW child of type NgModel                                                                 |
 | value       |  *Type: String*                                                                    |
-| _config       |  initialize variable name `_config` for StringField                                                                   |
-| _hasError       |   whether Field has error <br/>*Type: boolean*                                                                   | 
-| _errorMessage       |  initialize variable name `_errorMessage` for error message in input type such as required, minlength of input, and email pattern           <br/>*Type: any*                                                                   | 
+| _config       |  Initialize variable name `_config` for StringField                                                                   |
+| _hasError       |   Whether Field has error <br/>*Type: boolean*                                                                   | 
+| _errorMessage       |  Initialize variable name `_errorMessage` for error message in input type such as required, minlength of input, and email pattern           <br/>*Type: any*                                                                   | 
 | required       | whether Field is required                                                                   | 
 | minlength    | String Has min length                                                                  | 
-| emailPattern   | check  email pattern in String input                                                                  || field   |       initialize dependencies of MooFieldComponent on property name `field`                                                                | 
+| emailPattern   | check  email pattern in String input                                                                  || field   |       Initialize dependencies of MooFieldComponent on property name `field`                                                                | 
   #### Methods
    | Methods    | Description                                                                                                  |
 | ---------         | -----------                                                                                                           |
@@ -271,7 +271,7 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
 | ---------         | -----------                                                                                                           |
 | textField   |    **textField(c: Partial<StringField>): StringField**<br/>Return input as StringField <br/>*Type: Partial*                                                           |
 | hiddenField     |  **hiddenField(c: Partial<HiddenField>): HiddenField**<br/>Return input as HiddenField<br/>*Type: Partial*                                                                    |
-| radioField   |  **radioField(c: Partial<BooleanField>): BooleanField**<br/>Return input as BooleanField*Type: Partial*                                                                    |
+| radioField   |  **radioField(c: Partial<BooleanField>): BooleanField**<br/>Return input as BooleanField<br/>*Type: Partial*                                                                    |
 ### Field
  `Interface`   Abstraction for hold configuration
 
@@ -280,7 +280,7 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
 | ---------         | -----------                                                                                                           |
 | inputType    |    Type of input *Type: String*<br/>                                                           |
 | model     | *Type: String* <br/>                                                                   |
-| required    |  whether the Field is required  <br/>*Type: boolean*                                                                    |
+| required    |  Whether the Field is required  <br/>*Type: boolean*                                                                    |
 ### StringField
  `Interface`
 
@@ -292,8 +292,8 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
 | minlength   |  String Input has min length<br/>*Type: number* <br/>                                                                   |
 | maxlength   |  String Input has max length<br/>*Type: number*<br/>                                                                    |
 | pattern  |  String Input has pattern<br/>*Type: number*<br/>                                                                    |
-| row  |   size of text area field *Type: number*<br/>                                                                    |
-| col   |  size of text area field *Type: number*<br/>                                                                    |
+| row  |   Size of text area field *Type: number*<br/>                                                                    |
+| col   |  Size of text area field *Type: number*<br/>                                                                    |
 ### BooleanField
  `Interface`
 
@@ -327,8 +327,10 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
   | Methods     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
 | setDataSource         |   **setDataSource(data: Observable<any>)**<br/>*Type Observable*                       |
+| setDataSource         |   **setDataSource(data: Observable<any>)**<br/>*Type Observable*                       |
 | setSchema      |  | **setSchema(schema: any)**<br/>Schema                |
-| ngOnInit     |  | **ngOnInit()**<br/>  A callback method that is invoked immediately after the default change detector has checked the directive's data-bound properties for the first time, and before any of the view or content children have been checked. It is invoked only once when the directive is instantiated.                   |
+| ngOnInit     |  | **ngOnInit()**<br/>A callback method that is invoked immediately after the default change detector has checked the directive's data-bound properties for the first time, and before any of the view or content children have been checked. It is invoked only once when the directive is instantiated.                  
+|
 
 ### NgTemplate
   `Directive`
