@@ -246,9 +246,9 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
 | _config       |  Initialize variable name `_config` for StringField                                                                   |
 | _hasError       |   Whether Field has error <br/>*Type: boolean*                                                                   | 
 | _errorMessage       |  Initialize variable name `_errorMessage` for error message in input type such as required, minlength of input, and email pattern           <br/>*Type: any*                                                                   | 
-| required       | whether Field is required                                                                   | 
-| minlength    | String Has min length                                                                  | 
-| emailPattern   | check  email pattern in String input                                                                  || field   |       Initialize dependencies of MooFieldComponent on property name `field`                                                                | 
+| required       | Whether Field is required                                                                   | 
+| minlength    | String has min length                                                                  | 
+| emailPattern   | Check  email pattern in String input                                                                  || field   |       Initialize dependencies of MooFieldComponent on property name `field`                                                                | 
   #### Methods
    | Methods    | Description                                                                                                  |
 | ---------         | -----------                                                                                                           |
@@ -286,8 +286,8 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
 | minlength   |  String Input has min length<br/>*Type: number* <br/>                                                                   |
 | maxlength   |  String Input has max length<br/>*Type: number*<br/>                                                                    |
 | pattern  |  String Input has pattern<br/>*Type: number*<br/>                                                                    |
-| row  |   Size of text area field *Type: number*<br/>                                                                    |
-| col   |  Size of text area field *Type: number*<br/>                                                                    |
+| row  |   Size of text area field<br/> *Type: number*<br/>                                                                    |
+| col   |  Size of text area field<br/>*Type: number*<br/>                                                                    |
 ### BooleanField
  `Interface`
 
