@@ -127,7 +127,7 @@ A class that contains modelSchema, URL API and some method CRUD data.
 
 ### ApiConfig
  `Class`
-A class that contains 
+A class that declare coonfig, urlAPI, and methodHttp.
 #### Properties
 | Properties     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
