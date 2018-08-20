@@ -38,6 +38,13 @@ $ ng serve
 # build for production with minification
 $ ng build
 ```
+### Form View
+Add tag <moo-vform> on template Core UI
+### Table View
+Add tag <moo-vtable> on template Core UI
+### List View
+Add tag <moo-vlist> on template Core UI
+
 ## What's included
 Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:
 
