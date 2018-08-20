@@ -188,7 +188,7 @@ A service to set URL API and model schema of fields as needed.
 ## Views
  ### Form View
  Display view in form.
- **How to use:**
+ <br/>**How to use:**<br/>
   Add tag `moo-vform` <moo-vform> on template Core UI
 
   ### MooVForm
@@ -315,7 +315,7 @@ Set field for StringField.
 
  ### List View
   Display view in list.
-  **How to use:**
+ <br/>**How to use:**<br/>
   Add tag `moo-vlist` on template Core UI
 
   ### MooVList 
@@ -347,7 +347,7 @@ Set field for StringField.
 
  ### Table View
   Display view in table.
-  **How to use:**
+ <br/>**How to use:**<br/>
   Add tag `moo-vtable` on template Core UI
 
   ### MooVTable
@@ -364,7 +364,7 @@ Set field for StringField.
 | ---------         | -----------                                                                                                           |
 | columns          |  **columns: Field []**<br/> Field in array                                                                                    |
 | _dataSource$          | *Type observable*                       |
-| _modelSchema         | **_modelSchema:Dictionary<Field>**<br/>Schema                       |
+| _modelSchema         |**_modelSchema:Dictionary<Field>**<br/>Schema                       |
 
 
    #### Methods
@@ -376,11 +376,15 @@ Set field for StringField.
 | ngOnInit()          |    A callback method that is invoked immediately after the default change detector has checked the directive's data-bound properties for the first time, and before any of the view or content children have been checked. It is invoked only once when the directive is instantiated.             |
 
  ### Chart View 
+  <br/>**How to use:**<br/>
+  Add tag `moo-vchart`
   ### MooVChart
    #### Selector
    moo-vchart
 
  ### Report View   
+  <br/>**How to use:**<br/>
+  Add tag `moo-vreport`
    ### MooVReport
    #### Selector
    moo-vreport
