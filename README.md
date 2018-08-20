@@ -127,7 +127,7 @@ A class that contains modelSchema, URL API and some method CRUD data.
 
 ### ApiConfig
  `Class`
-A class that declare coonfig, urlAPI, and methodHttp.
+<br/> A class that declare coonfig, urlAPI, and methodHttp.
 #### Properties
 | Properties     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
@@ -178,7 +178,7 @@ A class that declare coonfig, urlAPI, and methodHttp.
 | expand         |        *Type : String*                                                                               |
 ### Contact Service
 `Injectable`
-A service to set URL API and model schema of fields as needed.
+<br/> A service to set URL API and model schema of fields as needed.
 #### Properties
 | Properties     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
@@ -186,7 +186,7 @@ A service to set URL API and model schema of fields as needed.
 | modelSchema           |  **modelSchema[]** <br/> Schema for fields based on your requirement of fields.                                             |
 
 ## Views
- ### Form View
+ ## Form View
  Display view in form.
  <br/>**How to use:**<br/>
   Add tag `moo-vform` <moo-vform> on template Core UI
@@ -218,7 +218,7 @@ A service to set URL API and model schema of fields as needed.
  
   ### MooField
   `Directive`
-  The MooField directive represents an individual field with variable `name`as name of field.
+  <br/> The MooField directive represents an individual field with variable `name`as name of field.
 
    #### Selector 
    moo-field
@@ -313,7 +313,7 @@ Set field for StringField.
  `Interface`
  Set field for Hidden Field.
 
- ### List View
+ ## List View
   Display view in list.
  <br/>**How to use:**<br/>
   Add tag `moo-vlist` on template Core UI
@@ -345,7 +345,7 @@ Set field for StringField.
   `Directive`
   The NgTemplate directive represents an individual list
 
- ### Table View
+ ## Table View
   Display view in table.
  <br/>**How to use:**<br/>
   Add tag `moo-vtable` on template Core UI
@@ -375,14 +375,14 @@ Set field for StringField.
 | setSchema()          |   **setSchema(schema: any)**<br/>  Set new Schema                       |
 | ngOnInit()          |    A callback method that is invoked immediately after the default change detector has checked the directive's data-bound properties for the first time, and before any of the view or content children have been checked. It is invoked only once when the directive is instantiated.             |
 
- ### Chart View 
+ ## Chart View 
   <br/>**How to use:**<br/>
   Add tag `moo-vchart`
   ### MooVChart
    #### Selector
    moo-vchart
 
- ### Report View   
+ ## Report View   
   <br/>**How to use:**<br/>
   Add tag `moo-vreport`
    ### MooVReport
