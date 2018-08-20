@@ -111,7 +111,7 @@ A class that contains modelSchema, URL API and some method CRUD data.
 #### Properties
 | Properties     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| modelSchema           |  **modelSchema: Dictionary<Field> = {}**<br/> Schema for fields based on your requirements of fields . Set on Contact Service                                           |
+| modelSchema           |  **modelSchema: Dictionary<Field> = {}**<br/> Schema for fields based on your requirements of fields . Set on Contact Service.                                           |
 | api_url          |  URL for connect to API. Set on Contact Service <br/> *Type : String*                      |
 | _config         |     Variable name of interface IBApiConfig. **_config: IBApiConfig**                   |
 
@@ -220,7 +220,7 @@ A service to set URL API and model schema of fields as needed.
  
   ### MooField
   `Directive`
-  The MooField directive represents an individal field with variable `name`as name of field.
+  The MooField directive represents an individual field with variable `name`as name of field.
 
    #### Selector 
    moo-field
@@ -265,14 +265,14 @@ A service to set URL API and model schema of fields as needed.
    | Methods    | Description                                                                                                  |
 | ---------         | -----------                                                                                                           |
 | _istTextArea       |  **get isTextArea()**<br/>Check whether inputType is text area.<br/>*Type: boolean* | 
-| ngOnInit       |  A callback method that is invoked immediately after the default change detector has checked the directive's data-bound properties for the first time, and before any of the view or content children have been checked. It is invoked only once when the directive is instantiated.
-<br/>*Return _config as StringField.*      | 
+| ngOnInit       |  A callback method that is invoked immediately after the default change detector has checked the directive's data-bound properties for the first time, and before any of the view or content children have been checked. It is invoked only once when the directive is instantiated.<br/>*Return _config as StringField.*      | 
 | ngAfterViewInit       |  A callback method that is invoked immediately after Angular has completed initialization of a component's view. It is invoked only once when the view is instantiated.<br/>*Return model* | 
 
 
 ### Fields
  `Class`
  A class to declare field types (texField, hiddenField, and radioField).
+
  #### Methods
  | Methods  | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
@@ -335,7 +335,7 @@ Set field for StringField.
   
   | Methods     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| setDataSource         |   **setDataSource(data: Observable<any>)**<br/>*Type Observable*                       |
+| setDataSource         |   **setDataSource(data: Observable<any>)**<br/>*Type: Observable*                       |
 | setSchema         |   **setSchema(schema: any)**<br/>Schema                       |
 | ngOnInit        | **ngOnInit()**<br/>A callback method that is invoked immediately after the default change detector has checked the directive's data-bound properties for the first time, and before any of the view or content children have been checked. It is invoked only once when the directive is instantiated.                         |
 
@@ -370,7 +370,6 @@ Set field for StringField.
 | setDataSource()          |    **setDataSource(data: Observable<any>)**<br/> Set new  datasource                                                                                    |
 | setSchema()          |   **setSchema(schema: any)**<br/>  Set new Schema                       |
 | ngOnInit()          |    A callback method that is invoked immediately after the default change detector has checked the directive's data-bound properties for the first time, and before any of the view or content children have been checked. It is invoked only once when the directive is instantiated.             |
-| ngOnInit     |  |   A callback method that is invoked immediately after the default change detector has checked the directive's data-bound properties for the first time, and before any of the view or content children have been checked. It is invoked only once when the directive is instantiated.                       |
 
  ### Chart View 
   ### MooVChart
