@@ -38,12 +38,6 @@ $ ng serve
 # build for production with minification
 $ ng build
 ```
-### Form View
-Add tag `moo-vform` <moo-vform> on template Core UI
-### Table View
-Add tag `moo-vtable` on template Core UI
-### List View
-Add tag `moo-vlist` on template Core UI
 
 ## What's included
 Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:
@@ -194,9 +188,13 @@ A service to set URL API and model schema of fields as needed.
 ## Views
  ### Form View
  Display view in form.
+ **How to use:**
+  Add tag `moo-vform` <moo-vform> on template Core UI
+
   ### MooVForm
   `Component` <br/>
   A component that makes it easy to create form.
+  
   
    #### Selector
    moo-vform
@@ -317,6 +315,9 @@ Set field for StringField.
 
  ### List View
   Display view in list.
+  **How to use:**
+  Add tag `moo-vlist` on template Core UI
+
   ### MooVList 
   `Component`
   A component that makes it easy to create list
@@ -346,6 +347,9 @@ Set field for StringField.
 
  ### Table View
   Display view in table.
+  **How to use:**
+  Add tag `moo-vtable` on template Core UI
+
   ### MooVTable
   `Component`
    A component that makes it easy to create table
