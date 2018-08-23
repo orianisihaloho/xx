@@ -209,9 +209,11 @@ A class that contains modelSchema, URL API and some methods of CRUD data.
    moo-vform
 
    #### Input 
-    | Input | Description                                                                                                           |
-    | ---------         | -----------                                                                                                           |   
-   |callback    |  **callback :Function** <br/> Function for bind the input from template for tag moo-vform to MoovformComponent.         |
+
+| Input   | Description                                                                                                           |
+| ---------         | -----------                                                                                                           |
+| callback       |  **callback :Function** <br/> Function for bind the input from template for tag moo-vform to MoovformComponent.|
+
    #### Properties
 
 | Properties    | Description                                                                                                           |
