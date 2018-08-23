@@ -54,14 +54,17 @@ mooadmin-coreui-ngx/
 |       ├── views
 |           ├── mooadmin
 |               ├── contact
-|                   ├── contact.component
+|                   ├── contact.component.html
+|                   ├── contact.component.ts
 |               ├── moo-demo-routing.module
-|               ├── moo-demo.module
+|               ├── moo-demo.module.ts
 |               └── ...
 |          └── ...
-|       ├── app.component
-|       ├── app.module
-|       ├── app.routing
+|       ├── app.component.html
+|       ├── app.component.ts
+|       ├── app.component.css
+|       ├── app.module.ts
+|       ├── app.routing.ts
 |       └── ...
 │   ├── assets/
 │   ├── environments/
@@ -69,23 +72,30 @@ mooadmin-coreui-ngx/
 |       ├── mooadmin-ngx
 |           ├── moo-field
 |               ├── moo-field.component
-|               ├── moo-field-string.component
+|               ├── moo-field-boolean.component.ts
+|               ├── moo-field-boolean.component.html
+|               ├── moo-field-string.component.ts
+|               ├── moo-field-string.component.html
 |           ├── moo-vchart/
-|               ├── moo-vchart.component
+|               ├── moo-vchart.component.html
+|               ├── moo-vchart.component.ts
 |           ├── moo-vform/
-|               ├── moo-vform.component
+|               ├── moo-vform.component.html
+|               ├── moo-vform.component.ts
 |           ├── moo-vlist/
-|               ├── moo-vlist.component
+|               ├── moo-vlist.component.html
+|               ├── moo-vlist.component.ts
 |           ├── moo-vtable/
-|               ├── moo-table.component
+|               ├── moo-table.component.html
+|               ├── moo-vtable.component.ts
 |           ├── active-record
 |           ├── dictionary
 |           ├── field-types
 |           ├── mooadmin.module   
 │   ├── scss/
 |   ├── services
-|       ├── contact.service
-|       ├── contact
+|       ├── contact.service.ts
+|       ├── contact.ts
 │   ├── index.html
 │   └── ...
 ├── .angular.json
@@ -100,13 +110,13 @@ Active Record is a helper library for connect API in your client Angular 4 Appli
 
 ### Active Record
 `Class`  
-A class that contains modelSchema, URL API and some method CRUD data. 
+A class that contains modelSchema, URL API and some methods of CRUD data. 
 
 #### Properties
 | Properties     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| modelSchema           |  **modelSchema: Dictionary<Field> = {}**<br/> Schema for fields based on your requirements of fields . Set on Contact Service                                           |
-| api_url          |  URL for connect to API. Set on Contact Service <br/> *Type : String*                      |
+| modelSchema           |  **modelSchema: Dictionary<Field> = {}**<br/> Schema for the input fields. You can set the input fields on Contact Service.                                           |
+| api_url          |  URL for connect to API. You can set on Contact Service <br/> *Type : String*                      |
 | _config         |     Variable name of interface IBApiConfig. **_config: IBApiConfig**                   |
 
 #### Methods
@@ -119,9 +129,9 @@ A class that contains modelSchema, URL API and some method CRUD data.
 | update        |  **update(id: any, data: any)** <br/> Update data by id <br/> *Type: any*                                                                                       |
 | insert  | **insert(data: any)** <br/> Insert data   <br/> *Type: any*                        |
 | delete      |  **delete(data: any)** <br/> Delete data by id  <br/> *Type: any*                                  |
-| generateParam     | **generateParam(params: any)** <br/> Generate paramater in any type                  |
-| generateParamODataQuery |**generateParamODataQuery(query: ODataQuery)** <br/> Generate a paramater that can be used to modify an ODataQuery in the query string of the request URI                            |
-| processData        |    **processData(res: Response)** <br/> Response data json                 |
+| generateParam     | **generateParam(params: any)** <br/>                 |
+| generateParamODataQuery |**generateParamODataQuery(query: ODataQuery)** <br/>                            |
+| processData        |    **processData(res: Response)** <br/> Create response instance from provided values to return body as parsed JSON object.                 |
 | handleError      |    **handleError(error: any)** <br/> Handle any error that occurred <br/> *Type: any*                  |
 
 
@@ -131,14 +141,14 @@ A class that contains modelSchema, URL API and some method CRUD data.
 #### Properties
 | Properties     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| config            |  Variable name to config API, headers and methods *Type : any*                                                                                          |
-| urlAPI           |  Variable name of URL API *Type : String*                                                                                          |
+| config            |  Variable name for configuration of API, headers and methods *Type : any*                                                                                          |
+| urlAPI           |  Variable name  for configuration of URL API *Type : String*                                                                                          |
 | headers            |  *Type : any*                                                                                          |
 | methods            | **defaultMethods: MethodHttp**                                                                                         |
-| query            |  Get all data<br/> *Type : String*                                                                                          |
-| update           |  Update data<br/> *Type : String*                      |
-| insert          |   Insert data<br/> *Type : String*                      |
-| delete | Delete data<br/> *Type: String*                           |
+| query            |  Get all data by String 'get' <br/> *Type : String*                                                                                          |
+| update           |  Update data by String 'put' on API <br/> *Type : String*                      |
+| insert          |   Insert data String 'post'<br/> *Type : String*                      |
+| delete | Delete data by String 'delete'<br/> *Type: String*                           |
 
 #### Methods
 | Methods     | Description                                                                                                           |
@@ -183,42 +193,44 @@ A class that contains modelSchema, URL API and some method CRUD data.
 | Properties     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
 | api_url          |  URL for connect to API <br/> *Type : String*                      |
-| modelSchema           |  **modelSchema[]** <br/> Schema for fields based on your requirement of fields.                                             |
+| modelSchema           |  **modelSchema[]** <br/> Schema for the input fields .                                             |
 
 ## Views
  ## Form View
- Display view in form.
+ A view of form for template Core UI.
  <br/>**How to use:**<br/>
   Add tag `moo-vform` <moo-vform> on template Core UI
 
   ### MooVForm
-  `Component` <br/>
-  A component that makes it easy to create form.
-  
+  `Component Class` <br/>
+  A component class that makes it easy to create form.
   
    #### Selector
    moo-vform
 
+   #### Input 
+    | Input | Description                                                                                                           |
+    | ---------         | -----------                                                                                                           |   
+   |callback    |  **callback :Function** <br/> Function for bind the input from template for tag moo-vform to MoovformComponent.         |
    #### Properties
 
 | Properties    | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| modelSchema        |  **modelSchema:Dictionary<Field>** <br/> Schema for fields based on your requirements of fields .                                                                                |
-| @Input(onSubmit)        |  The @Input decorator with a variable name as `onSubmit` to pass data from MooVFormcComponent. Use to bind the element in the template. <br/> *Type: any*                                                                                 |
+| modelSchema        |  **modelSchema:Dictionary<Field>** <br/> Schema for the input fields .                                                       |
 | @ViewChild(ngForm)       |    **ngForm: NgForm** <br/>Query for a VIEW child of type NgForm                                                             |
 
    #### Methods
 
   | Methods    | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-|     formSubmit        |    **formSubmit ( f: NgForm)**<br/> A method that is submitted from NgForm . There is postContact() with property (id,name,number).                                                                  |
+|     formSubmit        |    **formSubmit ( f: NgForm)**<br/> A method that used on moo-vform.component.html for submit all value from form.                                                                |
 |     postContact      |    **postContact ( contact: Contact)**<br/> A method to insert data contact.                                                                 |
 |    ngAfterViewInit    |     A callback method that is invoked immediately after Angular has completed initialization of a component's view. It is invoked only once when the view is instantiated.                                                                      |
 |        ngOnInit       |      A callback method that is invoked immediately after the default change detector has checked the directive's data-bound properties for the first time, and before any of the view or content children have been checked. It is invoked only once when the directive is instantiated.                                                                     |   
  
   ### MooField
-  `Directive`
-  <br/> The MooField directive represents an individual field with variable `name`as name of field.
+  `Component Class`
+  <br/>  A component class that represents an individual field with variable `name`as name of field.
 
    #### Selector 
    moo-field
@@ -231,28 +243,29 @@ A class that contains modelSchema, URL API and some method CRUD data.
    #### Properties
   | Properties     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| config         |   **config: Field**<br/> Schema for field <br/>                                                                 |
-|@Input(name)         |  The @Input decorator with a variable name as `name` to pass data from component. Use to bind the element in the template. <br/>*Type: String*                                                                    |
-| _stringFieldInputTypes  |    **_stringFieldInputTypes: string[]**<br/> Type of input for String Field in array. There are text, number, textarea, email, and password. <br/>*Type: String*                                                     |
+| _stringFieldInputTypes        |   **_stringFieldInputTypes: String[]**<br/> Type of string input field in array. There are text, number, textarea, email, password.<br/>                                                                 |
+| _boolFieldInputTypes        |   **_boolFieldInputTypes: String[]**<br/> Type of boolean input field . There are combobox, checkbox,radio.<br/>                                                                 |
+| config         |   **config: Field**<br/> Variable name for interface Field <br/>                                                                 |
 | form   |  **form: MooVformComponent**<br/>Initialize dependencies of MooVformComponent on property name `form`                                                                |
 
    #### Methods
  | Methods     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
 | isStringField   |   **get isStringField(): boolean**<br/> Return *_stringFieldInputTypes*                                                              |
+| isBoolField   |   **get isStringField(): boolean**<br/> Return *_boolFieldInputTypes*                                                              |
 |  ngOnInit    |   A callback method that is invoked immediately after the default change detector has checked the directive's data-bound properties for the first time, and before any of the view or content children have been checked. It is invoked only once when the directive is instantiated.<br/>Return *modelSchema* .                                                                             |
 
    
   ### MooFieldStringComponent
-   `Component`
+   `Component Class`
    #### Selector
    moo-field-string
    
    #### Properties
    | Properties     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| @ViewChild(model)      |  **model: NgModel** <br/>Query for a VIEW child of type NgModel                                                                 |
-| value       |  Variable to get the value of field. View on readonly mode. *Type: String*                                                                    |
+|model     |  **model: NgModel** <br/> to get name of input field.                                       |
+| value       |  to binding NgModel of text area. *Type: String*                                                                    |
 | _config       |  Initialize variable name `_config` for interface StringField.                                                                  |
 | _hasError       |   Whether Field has error <br/>*Type: boolean*                                                                   | 
 | _errorMessage       |  Initialize variable name `_errorMessage` for error message in input type such as required, minimal length of input, and email pattern.           <br/>*Type: any*                                                                   | 
@@ -263,20 +276,20 @@ A class that contains modelSchema, URL API and some method CRUD data.
    | Methods    | Description                                                                                                  |
 | ---------         | -----------                                                                                                           |
 | _istTextArea       |  **get isTextArea()**<br/>Check whether inputType is text area.<br/>*Type: boolean* | 
-| ngOnInit       |  A callback method that is invoked immediately after the default change detector has checked the directive's data-bound properties for the first time, and before any of the view or content children have been checked. It is invoked only once when the directive is instantiated.<br/>*Return _config as StringField.*      | 
+| ngOnInit       |  A callback method that is invoked immediately after the default change detector has checked the directive's data-bound properties for the first time, and before any of the view or content children have been checked. It is invoked only once when the directive is instantiated.<br/>*Return _config as StringField and return _hasError is false.*      | 
 | ngAfterViewInit       |  A callback method that is invoked immediately after Angular has completed initialization of a component's view. It is invoked only once when the view is instantiated.<br/>Return *model* | 
 
 
 ### Fields
  `Class`
- A class to declare field types (texField, hiddenField, and radioField).
+ A class that contain field types (texField, hiddenField, and radioField).
 
  #### Methods
  | Methods  | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
 | textField   |    **textField(c: Partial<StringField>): StringField**<br/>Return field types as StringField.<br/>*Type: Partial*                                                           |
 | hiddenField     |  **hiddenField(c: Partial<HiddenField>): HiddenField**<br/>Return field types as HiddenField.<br/>*Type: Partial*                                                                    |
-| radioField   |  **radioField(c: Partial<BooleanField>): BooleanField**<br/>Return field types as BooleanField.<br/>*Type: Partial*                                                                    |
+| boolField   |  **boolField(c: Partial<BooleanField>): BooleanField**<br/>Return field types as BooleanField.<br/>*Type: Partial*                                                                    |
 ### Field
  `Interface`   
  Abstraction for hold configuration.
@@ -285,7 +298,7 @@ A class that contains modelSchema, URL API and some method CRUD data.
 | Properties    | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
 | inputType    |    Type of input.<br/> *Type: String*<br/>                                                           |
-| model     | *Type: String*                                                                   |
+| model     |  To get name of input field.<br/>*Type: String*                                                                   |
 | required    |  Whether the Field is required.<br/>*Type: boolean*                                                                    |
 ### StringField
  `Interface`
@@ -307,20 +320,21 @@ Set field for StringField.
 #### Properties
 | Properties    | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| checked   |     **checked: true** <br/>                                                          |
-
+| checked   |     **checked: true** <br/> check the Booleanfield whether is true                                                         |
+| choices   |     **choices: any** <br/>   choices of booleanfield                                                        |
+| label  |     **label: string** <br/>                                                          |
 ### HiddenField
  `Interface`
  Set field for Hidden Field.
 
  ## List View
-  Display view in list.
+ A view of list for template Core UI.
  <br/>**How to use:**<br/>
   Add tag `moo-vlist` on template Core UI
 
   ### MooVList 
-  `Component`
-  A component that makes it easy to create list
+  `Component Class`
+  A component that makes it easy to create list.
    
    #### Selector
    moo-vlist
@@ -329,51 +343,56 @@ Set field for StringField.
   
   | Properties     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| _dataSource$          |  *Type Observable*                       |
+| listTemplate          |  **listTemplate: TemplateRef<NgForOfContext<any>>**<br/>                     |
+| _dataSource$          | A variable to get the model of Contact  *Type Observable*                       |
 | _modelSchema      |  |**_modelSchema:Dictionary<Field>**<br/>Schema                |
 
   #### Methods
   
   | Methods     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| setDataSource         |   **setDataSource(data: Observable<any>)**<br/>*Type: Observable*                       |
-| setSchema         |   **setSchema(schema: any)**<br/>Schema                       |
+| setDataSource         |  **setDataSource(data: Observable<any>)**<br/>Get the model of Contact<br/>*Type: Observable*                       |
+| setSchema         |   **setSchema(schema: any)**<br/>set modelSchema                        |
 | ngOnInit        | **ngOnInit()**<br/>A callback method that is invoked immediately after the default change detector has checked the directive's data-bound properties for the first time, and before any of the view or content children have been checked. It is invoked only once when the directive is instantiated.                         |
 
 
 ### NgTemplate
   `Directive`
-  The NgTemplate directive represents an individual list
+  The NgTemplate directive represents an list
 
  ## Table View
-  Display view in table.
+  A view of table form for template Core UI.
  <br/>**How to use:**<br/>
   Add tag `moo-vtable` on template Core UI
 
   ### MooVTable
-  `Component`
-   A component that makes it easy to create table
+  `Component Class`
+   A component that makes it easy to create table.
    #### Selector
    moo-vtable
 
    #### Input
   
-   #### Properties
+  | Input    | Description                                                                                                           |
+| ---------         | -----------                                                                                                           |
+| callbackTable         |        **callbackTable :Function**,<br/> Function for bind the input from template for tag moo-vtable to MoovtableComponent.                                         |
+  #### Properties
   
   | Properties     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| columns          |  **columns: Field []**<br/> Field in array                                                                                    |
-| _dataSource$          | *Type observable*                       |
-| _modelSchema         |**_modelSchema:Dictionary<Field>**<br/>Schema                       |
+| columns          |  **columns: Field []**<br/> variable name for interface Field in array                                                                                    |
+| _dataSource$          | **_dataSource$: Observable<any>**<br/> A variable to get the model of Contact  <br/>*Type observable*                       |
+| modelSchema         |**modelSchema:Dictionary<Field>**<br/>Schema                       |
 
 
    #### Methods
  
   | Methods     | Description                                                                                                           |
 | ---------         | -----------                                                                                                           |
-| setDataSource()          |    **setDataSource(data: Observable<any>)**<br/> Set new  datasource                                                                                    |
-| setSchema()          |   **setSchema(schema: any)**<br/>  Set new Schema                       |
+| setDataSource()          |   **setDataSource(data: Observable<any>)**<br/>Get the model of Contact<br/>*Type: Observable*                                                                                   |
+| setSchema()          |   **setSchema(schema: any)**<br/>  Set Schema                       |
 | ngOnInit()          |    A callback method that is invoked immediately after the default change detector has checked the directive's data-bound properties for the first time, and before any of the view or content children have been checked. It is invoked only once when the directive is instantiated.             |
+| delete()          |    **delete(id)** <br/> Delete data with callbackTable          |
 
  ## Chart View 
   <br/>**How to use:**<br/>
